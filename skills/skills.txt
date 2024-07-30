@@ -50,7 +50,6 @@
 14. Salto fwd. straight, also with 1/2 t.
 16. Double salto fwd. tucked, also with 1/2t.
 17. Double salto fwd. piked, also with 1/2t.
-25. 26.
 36. Double salto fwd. tucked with 1/1 turn.
 38. Salto fwd. t. or p. to front support.
 42. Double salto fwd. tucked with 3/2 turn.
@@ -69,7 +68,6 @@
 13. Back handspring.
 16. Double salto bwd. piked.
 24. Triple salto bwd. piked.
-25. 26.
 29. Double salto straddled with 1/1 t.
 31. Jump bwd. with 1/2 t. to roll fwd.
 35. Salto bwd. str. with 1/1 and salto bwd piked.
@@ -96,6 +94,7 @@
 14. Salto backwards tucked W. 3/2 t.
 22. Salto bwd. str. with 3/1t.
 24. Salto bwd. str. with 4/1t.
+
 1. Scissor forward. 2. Scissor forward with travel sideways (also with 1/2t
 3. Scissor fwd. with hop sideways from one end to the other (3/3).
 7. Scissor forward with 1/2t.
@@ -190,6 +189,7 @@
 15. DSA, reverse Stöckli or circle on one pommel through handstand.
 21. Circle or flair with hop travel bwd. through handstand.
 20. Circle or flair through handstand (also with 3/4 t.
+
 1. Uprise fwd. to support. 2.
 7. From any support scale, swallow or swing bwd in support, roll forward to bwd swing in hang.
 8. Uprise fwd and counter salto fwd. to bwd swing in hang.
@@ -218,18 +218,18 @@
 86. From support swing bwd. to handstand (2 s.).
 87. Honma and swing bwd. to handstand (2s.).
 88. Honma str. and swing bwd. to handstand (2s.).
-4. Inverted cross (2 s.)
 1. L-sit (2s.) or straddled L-sit (2 s.).
 2. V-sit (2 s.).
+4. Inverted cross (2 s.)
 7. Hanging scale rearways (back lever) (2s.).
 9. Support scale (planche)(2s.).
 10. Support scale at ring height (swallow or maltese cross) (2s.).
 11. Inverted swallow (2 s.).
 13. Hanging scale frontways (front lever) (2s.).
 15. Any cross (2s.)or V cross (2 s.).
+19. Support scale straddled (2 s.).
 22. V Cross, press to V-sit (2 sec.).
 23. Vertical pull up with str. arms to V-cross (2s.).
-19. Support scale straddled (2 s.).
 25. Press to hdst. with bent body and bent arms (2s)
 26. Press to hdst. with str. body a. bent arms or b.
 27. Press to hdst. with str. body and str. arms from support or support scale (2 s.).
@@ -237,13 +237,13 @@
 31. Slow roll fwd. piked with bent arms, to support. 32. Slow roll fwd. straight with bent arms, to
 38. Slow roll bwd. slowly and straight. body to Lsit (2s.).
 39. Slow roll fwd. straight to cross or L-cross (2s.).
-52. Slow Roll bwd. with straight body to cross, L- 53.
-58. From or through hanging scale rearways pull
-60. Through hanging scale rearways pull with str. body through cross to inv. swallow (2 s.).
 50. Vertical pull up with bent arms to hanging scale rearways (2s.).
 51. Vertical pull up with straight arms to hanging scale rearways (2 s.).
+52. Slow Roll bwd. with straight body to cross, L- 53.
+58. From or through hanging scale rearways pull
 56. Fr. cross or L-cr., move fwd. to back lever (2s.).
 57. Vertical pull up to L-sit (2 s.).
+60. Through hanging scale rearways pull with str. body through cross to inv. swallow (2 s.).
 62. From hdst., lower horiz. to back lever 2 s.).
 63. From sup. or cross, lower slowly to hang, and pull with str. arms to cross (2 s.).
 64. Vertical pull up to cross or L-cross (2 s.).
@@ -257,10 +257,10 @@
 78. From cross, press with straight body to inverted cross (2 s.).
 84. From swallow, press to inverted cross (2s.).
 88. From cross, press to planche without first going to support (2 s.).
-94. From inverted cross lower slowly to inverted hang and felge bwd. slowly to cross (2s.)
-90. Through hang rearways press and straight body to inverted cross (2s.)
-95. From inverted cross lower slowly to inverted
 89. From cross, press to swallow (2 s.).
+90. Through hang rearways press and straight body to inverted cross (2s.)
+94. From inverted cross lower slowly to inverted hang and felge bwd. slowly to cross (2s.)
+95. From inverted cross lower slowly to inverted
 101. Roll bwd. slowly with str. arms and body to free sup. scale (2s.).
 107. Slow Roll bwd. with str. body to swallow (2 s.).
 108.Roll backward slowly with straight arms and body to inverted cross through swallow.
@@ -268,11 +268,11 @@
 119. Slow roll fwd. with straight body through cross to inverted cross (2 s.).
 120. Azarian to inverted Swallow (2s.).
 124. Slow roll fwd. with str. body to Cross
-132. From hang vertical pull up to swallow (2 s.).
-138. From hang vertical pull up to inv. cross (2s.).
 125. Slow roll forward with straight body through cross to swallow (2 sec).
+132. From hang vertical pull up to swallow (2 s.).
 130. From hang vertical pull up support and press to hdst. with straight body and straight arms.
 137. From hang vertical pull up thr. swallow to sup.
+138. From hang vertical pull up to inv. cross (2s.).
 2. Uprise fwd. to L-sit, (2 s.).
 3. Uprise fwd. to V-sit (2s.).
 8. Kip to L-sit (2 s.).
@@ -326,7 +326,9 @@
 51. Salto bwd. str. with 1/1 t. and salto t.
 52. Double salto bwd. straight with 1/2 or 1/1t.
 54. Double salto bwd. straight with 3/2 or 2/1 t.
-101. Hdspr. fwd. and salto fwd. t. w. 1/2 t. (or Cuervo t.) 102. Hdspr. fwd. and salto fwd. t.w. 1/1 t.
+
+101. Hdspr. fwd. and salto fwd. t. w. 1/2 t. (or Cuervo t.) 
+102. Hdspr. fwd. and salto fwd. t.w. 1/1 t.
 107. Hdspr. fwd. and salto fwd. p.w. 1/2t. (Cuervo p.).
 108. Hdspr. fwd. and salto fwd. p.w.1/1t.
 103. Hdspr. fwd. and salto fwd. t. W. 3/2 t.
@@ -347,7 +349,8 @@
 133. Kasamatsu str. with 5/2 t. or Tsukahara str. with 134.
 131. Kasamatsu str. with 3/2 t.
 132. Kasamatsu str. with 2/1t.
-201. Forward handspring. 202. Forward handspring with 1/2 t. 203. Forward handspring with 1/1t.
+201. Forward handspring. 202. Forward handspring with 1/2 t. 
+203. Forward handspring with 1/1t.
 204. Forward handspring with 3/2 t.
 205. Forward handspring with 2/1t.
 206. Forward handspring with 5/2 t.
@@ -375,18 +378,15 @@
 405. Yurchenko straight with 3/2 t.
 406. Yurchenko straight with 2/1t.
 407. Yurchenko straight with 5/2 t.
-413. Round off, 1/2t. and hdspr. fwd. and salto fwd.
-416. Round off, 1/2 t. and hdspr. fwd. and salto fwd. 417. Round off, 1/2 t. and hdspr. fwd. and salto fwd.
 408. Yurchenko Straight 3/1t.
-414. Round off, 1/2 t. and hdspr. fwd. and salto fwd.
 409. Yurchenko Straight 7/2t.
+413. Round off, 1/2t. and hdspr. fwd. and salto fwd.
+414. Round off, 1/2 t. and hdspr. fwd. and salto fwd.
+416. Round off, 1/2 t. and hdspr. fwd. and salto fwd. 
+417. Round off, 1/2 t. and hdspr. fwd. and salto fwd.
 415. Round off, 1/2 t. and hdspr. fwd. and salto fwd.
-3.8 lense
-4.2 lense
-4.6 lens
 419. Round off, 1/2t. and hdspr. fwd. and salto fwd.
 420. Round off, 1/2 t. and hdspr. fwd. and salto fwd.
-5.0 lens
 501. Round off, handspring bwd.
 502. Round off, handspring bwd. with 1/2 turn.
 503. Round off, handspring bwd. with 1/1 turn.
@@ -404,6 +404,7 @@
 519. Yurchenko and salto bwd. tucked.
 520. Melissanidis piked.
 521. Round off, 1/2 t.a. hdspr. fwd. and double salto fwd. tucked.
+
 1. Forward uprise to support. 2. Fwd. uprise and straddle cut bwd to handstand.
 3. Fwd. uprise and straddle cut bwd to hang.
 5. Fwd. uprise with 1/2 t. to handstand.
@@ -466,27 +467,26 @@
 63. Stützkehr bwd. through handstand. to support.
 69. Stützkehr bwd. with straddle cut bwd. to support
 73. Healy to upper arm hang (also from handstand 74. Following a swing element (min. B) to .on rail). handstand on 1 rail, Healy to upper arm hang.
-80..
-81. Swing bwd. with 1/2 t. hop to handstand.
 75. Healy to support (also from handstand on 1 rail).
 76. Following a swing element (min. B) to handstand on 1 rail, Healy (360° or more) to support.
+81. Swing bwd. with 1/2 t. hop to handstand.
 82. Swing bwd. with 3/4 t. hop to handstand.
-84. Gatson 1 with 1/4 t to handstand on 1 rail and 1/4 t.
 83. Swing bwd. with 1/1 t. hop to handstand.
+84. Gatson 1 with 1/4 t to handstand on 1 rail and 1/4 t.
 86. From handstand on 1 rail, 1/2 or 3/4 t. fwd. or bwd.
 91. Any handstand with 1/2 turn. (also with 2 s.)
 92. Any 1/1 pirouette in handstand on 2 rails.
 99. From handstand, salto fwd to support or from handstand with rotated grip, inlocate to support.
 101.5/4 salto fwd. straddle directly to hang.
-114. Double salto fwd. pike to upper arm hang.
 104. 5/4 salto fwd. tuck or pike to upper arm hang.
 105. Salto fwd to support.
 106. 5/4 salto fwd. straddled to upper arm hang
 107.5/4 salto fwd. straddled to bent arm support.
 111. Salto fwd. piked to hang.
 113. Double salto fwd. tuck to upper arm hang.
-119. Salto fwd. with 1/1 t. to upper arm hang.
+114. Double salto fwd. pike to upper arm hang.
 117. 5/4 salto fwd. straight to upper arm hang
+119. Salto fwd. with 1/1 t. to upper arm hang.
 3. Swing forward, straddle cut backward, and regrasp with straight body at horizontal to bent and upper arm.
 4. Moy piked with straddle bwd to handstand
 5. Swing forward, straddle cut backward, and regrasp with straight body at horizontal.
@@ -554,40 +554,40 @@
 9. Salto fwd. piked or straight. 3/2 t.
 10. Salto fwd. piked or straight with 2/1 or 5/2t.
 15. Double salto fwd. tuck from end.
-17..
 18. Double salto fwd. piked with 1/2 t.
+19. Salto bwd. piked or straight, also with 1/2 t.
 21. Salto bwd. piked or straight with 1/1 or 3/2t.
 22. Salto bwd. straight with 2/1t.
-19. Salto bwd. piked or straight, also with 1/2 t.
 28. High wende and salto bwd tuck or pike.
 32. Double salto bwd. tuck from end.
+33. Double salto bwd. tuck.
 34. Double salto bwd. pike.
 36. Double salto bwd. t. with 1/1t.
-33. Double salto bwd. tuck.
 40. Double salto bwd. tucked with 1/2t. or salto bwd.
 43. From hang on end, salto bwd. straight.
 45. From hang on end, double salto bwd. Tuck.
 46. From hang on end, double salto bwd. pike.
 47. From hang on end, double salto bwd straight 48. From hang on end, triple salto bwd. Tuck
-54. From hang on end, double salto bwd. tuck with
 53. From hang on end, double salto bwd. tuck with 1/1 1/2t.
-9. Swing bwd. and pirouette to support.
+54. From hang on end, double salto bwd. tuck with
+
 1. Back uprise to handstand.
 2. Back uprise to hdst. with 1/1 turn also to mixt.
 7. Back uprise to handstand with 1/2 turn.
 8. Swing bwd. and pirouette to hang.
+9. Swing bwd. and pirouette to support.
 13. Giant swing fwd.
 14. Giant swing fwd.with 1/1turn in mixtgrip. 15.Giantswingfwd. with 1/1 turn in double elgrip
+19. Giant swing fwd. with 1/2 t. thr. hdst.
 20. Flying giant swing fwd. or with 1/2 turn.
 21. Flying giant swing fwd. with 1/1 t.
-19. Giant swing fwd. with 1/2 t. thr. hdst.
 26. Giant swing fwd. with one arm in ungr.
 27. On one arm, giant swing fwd. W. 1/1t. to el-grip and 1/1 t.
 31. Giant swing bwd.
 37. Giant swing bwd. with 1/2 turn.
-45. Flying giant swing bwd. with 1/1t.
-43. Giant swing bwd. with hop toundergrip.
+43. Giant swing bwd. with hop to undergrip.
 44. Flying giant swing bwd.
+45. Flying giant swing bwd. with 1/1t.
 50. Giant swing bwd. with hop 1/2 t. to el-grip.
 51. Giant swing bwd. with hop 3/2t. to undergrip, mixed el-grip.
 52. Giant swing bwd. with hop 3/2 t. to double el-grip 53.
