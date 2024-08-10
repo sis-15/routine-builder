@@ -1,0 +1,687 @@
+[
+  {
+    "number": 1,
+    "description": "Uprise fwd. to support. 2.",
+    "value": "A"
+  },
+  {
+    "number": 7,
+    "description": "From any support scale, swallow or swing bwd in support, roll forward to bwd swing in hang.",
+    "value": "A"
+  },
+  {
+    "number": 8,
+    "description": "Uprise fwd and counter salto fwd. to bwd swing in hang.",
+    "value": "B"
+  },
+  {
+    "number": 19,
+    "description": "From hang, felge upward to support.",
+    "value": "A"
+  },
+  {
+    "number": 20,
+    "description": "Swing fwd. through hdst.",
+    "value": "B"
+  },
+  {
+    "number": 21,
+    "description": "Tucked double salto bwd. to hang",
+    "value": "C"
+  },
+  {
+    "number": 22,
+    "description": "Piked or straight double salto bwd. to hang.",
+    "value": "D"
+  },
+  {
+    "number": 25,
+    "description": "Dislocate bwd. piked or straight.",
+    "value": "A"
+  },
+  {
+    "number": 31,
+    "description": "Uprise bwd. to support.",
+    "value": "A"
+  },
+  {
+    "number": 32,
+    "description": "Uprise bwd. str. through handstand.",
+    "value": "B"
+  },
+  {
+    "number": 38,
+    "description": "Backward swing to salto fwd. piked to support",
+    "value": "B"
+  },
+  {
+    "number": 39,
+    "description": "Honma straight.",
+    "value": "C"
+  },
+  {
+    "number": 37,
+    "description": "Inlocate piked or straight.",
+    "value": "A"
+  },
+  {
+    "number": 43,
+    "description": "Slow inlocate from hang.",
+    "value": "A"
+  },
+  {
+    "number": 45,
+    "description": "Double salto fwd. piked or straight to hang.",
+    "value": "C"
+  },
+  {
+    "number": 44,
+    "description": "Double salto fwd. tucked to hang.",
+    "value": "B"
+  },
+  {
+    "number": 49,
+    "description": "Kip to support.",
+    "value": "A"
+  },
+  {
+    "number": 56,
+    "description": "Back kip to support.",
+    "value": "B"
+  },
+  {
+    "number": 55,
+    "description": "Back kip with bent arms to support.",
+    "value": "A"
+  },
+  {
+    "number": 61,
+    "description": "Fwd. swing to swing bwd. in hang.",
+    "value": "A"
+  },
+  {
+    "number": 67,
+    "description": "From support or cross, felge bwd. piked or straight with bent arms to support.",
+    "value": "A"
+  },
+  {
+    "number": 63,
+    "description": "Bwd. swing, salto piked to support.",
+    "value": "C"
+  },
+  {
+    "number": 75,
+    "description": "Swing fwd. to handstand or giant swing bwd to handstand (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 74,
+    "description": "Back kip or roll bwd str. with bent arms to handstand (2 s.).",
+    "value": "B"
+  },
+  {
+    "number": 81,
+    "description": "Uprise bwd. to handstand or giant swing fwd to handstand (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 86,
+    "description": "From support swing bwd. to handstand (2 s.).",
+    "value": "B"
+  },
+  {
+    "number": 87,
+    "description": "Honma and swing bwd. to handstand (2s.).",
+    "value": "C"
+  },
+  {
+    "number": 88,
+    "description": "Honma str. and swing bwd. to handstand (2s.).",
+    "value": "D"
+  },
+  {
+    "number": 1,
+    "description": "L-sit (2s.) or straddled L-sit (2 s.).",
+    "value": "A"
+  },
+  {
+    "number": 2,
+    "description": "V-sit (2 s.).",
+    "value": "B"
+  },
+  {
+    "number": 4,
+    "description": "Inverted cross (2 s.)",
+    "value": "D"
+  },
+  {
+    "number": 7,
+    "description": "Hanging scale rearways (back lever) (2s.).",
+    "value": "A"
+  },
+  {
+    "number": 9,
+    "description": "Support scale (planche)(2s.).",
+    "value": "C"
+  },
+  {
+    "number": 10,
+    "description": "Support scale at ring height (swallow or maltese cross) (2s.).",
+    "value": "D"
+  },
+  {
+    "number": 11,
+    "description": "Inverted swallow (2 s.).",
+    "value": "E"
+  },
+  {
+    "number": 13,
+    "description": "Hanging scale frontways (front lever) (2s.).",
+    "value": "A"
+  },
+  {
+    "number": 15,
+    "description": "Any cross (2s.)or V cross (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 19,
+    "description": "Support scale straddled (2 s.).",
+    "value": "A"
+  },
+  {
+    "number": 22,
+    "description": "V Cross, press to V-sit (2 sec.).",
+    "value": "D"
+  },
+  {
+    "number": 23,
+    "description": "Vertical pull up with str. arms to V-cross (2s.).",
+    "value": "E"
+  },
+  {
+    "number": 25,
+    "description": "Press to hdst. with bent body and bent arms (2s)",
+    "value": "A"
+  },
+  {
+    "number": 26,
+    "description": "Press to hdst. with str. body a. bent arms or b.",
+    "value": "B"
+  },
+  {
+    "number": 27,
+    "description": "Press to hdst. with str. body and str. arms from support or support scale (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 28,
+    "description": "Press to hdst. with str. body and str. arms from swallow (2s.).",
+    "value": "D"
+  },
+  {
+    "number": 31,
+    "description": "Slow roll fwd. piked with bent arms, to support. 32. Slow roll fwd. straight with bent arms, to",
+    "value": "A"
+  },
+  {
+    "number": 38,
+    "description": "Slow roll bwd. slowly and straight. body to Lsit (2s.).",
+    "value": "B"
+  },
+  {
+    "number": 39,
+    "description": "Slow roll fwd. straight to cross or L-cross (2s.).",
+    "value": "C"
+  },
+  {
+    "number": 50,
+    "description": "Vertical pull up with bent arms to hanging scale rearways (2s.).",
+    "value": "B"
+  },
+  {
+    "number": 51,
+    "description": "Vertical pull up with straight arms to hanging scale rearways (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 52,
+    "description": "Slow Roll bwd. with straight body to cross, L- 53.",
+    "value": "D"
+  },
+  {
+    "number": 58,
+    "description": "From or through hanging scale rearways pull",
+    "value": "D"
+  },
+  {
+    "number": 56,
+    "description": "Fr. cross or L-cr., move fwd. to back lever (2s.).",
+    "value": "B"
+  },
+  {
+    "number": 57,
+    "description": "Vertical pull up to L-sit (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 60,
+    "description": "Through hanging scale rearways pull with str. body through cross to inv. swallow (2 s.).",
+    "value": "F"
+  },
+  {
+    "number": 62,
+    "description": "From hdst., lower horiz. to back lever 2 s.).",
+    "value": "B"
+  },
+  {
+    "number": 63,
+    "description": "From sup. or cross, lower slowly to hang, and pull with str. arms to cross (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 64,
+    "description": "Vertical pull up to cross or L-cross (2 s.).",
+    "value": "D"
+  },
+  {
+    "number": 65,
+    "description": "From planche, lower horiz. and slowly to hanging scale rw. and press to swallow (2s.) or from swallow same to planche or planche to planche.",
+    "value": "E"
+  },
+  {
+    "number": 66,
+    "description": "From hang vertical pull up, slowly with straight arms through cross to inverted swallow (2 s.).",
+    "value": "G"
+  },
+  {
+    "number": 68,
+    "description": "From handstand, lower slowly through inverted 69.",
+    "value": "B"
+  },
+  {
+    "number": 70,
+    "description": "From swallow, press to support scale (2 s.).",
+    "value": "D"
+  },
+  {
+    "number": 71,
+    "description": "From swallow, lower slowly to hanging scale, press to swallow (2 s.).",
+    "value": "E"
+  },
+  {
+    "number": 72,
+    "description": "From hanging scale rw. press to swallow (also to Support Scale) (2 S.).",
+    "value": "F"
+  },
+  {
+    "number": 75,
+    "description": "From cross or L-cross, press to L-sit (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 77,
+    "description": "From L-cross, press to inverted cross (2 s.).",
+    "value": "E"
+  },
+  {
+    "number": 78,
+    "description": "From cross, press with straight body to inverted cross (2 s.).",
+    "value": "F"
+  },
+  {
+    "number": 84,
+    "description": "From swallow, press to inverted cross (2s.).",
+    "value": "F"
+  },
+  {
+    "number": 88,
+    "description": "From cross, press to planche without first going to support (2 s.).",
+    "value": "D"
+  },
+  {
+    "number": 89,
+    "description": "From cross, press to swallow (2 s.).",
+    "value": "E"
+  },
+  {
+    "number": 90,
+    "description": "Through hang rearways press and straight body to inverted cross (2s.)",
+    "value": "G"
+  },
+  {
+    "number": 94,
+    "description": "From inverted cross lower slowly to inverted hang and felge bwd. slowly to cross (2s.)",
+    "value": "D"
+  },
+  {
+    "number": 95,
+    "description": "From inverted cross lower slowly to inverted",
+    "value": "E"
+  },
+  {
+    "number": 101,
+    "description": "Roll bwd. slowly with str. arms and body to free sup. scale (2s.).",
+    "value": "E"
+  },
+  {
+    "number": 107,
+    "description": "Slow Roll bwd. with str. body to swallow (2 s.).",
+    "value": "E"
+  },
+  {
+    "number": 108,
+    "description": "Roll backward slowly with straight arms and body to inverted cross through swallow.",
+    "value": "F"
+  },
+  {
+    "number": 118,
+    "description": "Slow roll fwd. with straight body through cross and press to support scale without first going to support (2 s.).",
+    "value": "D"
+  },
+  {
+    "number": 119,
+    "description": "Slow roll fwd. with straight body through cross to inverted cross (2 s.).",
+    "value": "E"
+  },
+  {
+    "number": 120,
+    "description": "Azarian to inverted Swallow (2s.).",
+    "value": "F"
+  },
+  {
+    "number": 124,
+    "description": "Slow roll fwd. with str. body to Cross",
+    "value": "D"
+  },
+  {
+    "number": 125,
+    "description": "Slow roll forward with straight body through cross to swallow (2 sec).",
+    "value": "E"
+  },
+  {
+    "number": 132,
+    "description": "From hang vertical pull up to swallow (2 s.).",
+    "value": "F"
+  },
+  {
+    "number": 130,
+    "description": "From hang vertical pull up support and press to hdst. with straight body and straight arms.",
+    "value": "D"
+  },
+  {
+    "number": 137,
+    "description": "From hang vertical pull up thr. swallow to sup.",
+    "value": "E"
+  },
+  {
+    "number": 138,
+    "description": "From hang vertical pull up to inv. cross (2s.).",
+    "value": "G"
+  },
+  {
+    "number": 2,
+    "description": "Uprise fwd. to L-sit, (2 s.).",
+    "value": "B"
+  },
+  {
+    "number": 3,
+    "description": "Uprise fwd. to V-sit (2s.).",
+    "value": "C"
+  },
+  {
+    "number": 8,
+    "description": "Kip to L-sit (2 s.).",
+    "value": "B"
+  },
+  {
+    "number": 9,
+    "description": "Kip to V-sit (2 S.).",
+    "value": "C"
+  },
+  {
+    "number": 14,
+    "description": "Honma to L-sit (2 s.).",
+    "value": "B"
+  },
+  {
+    "number": 15,
+    "description": "Homna to V-sit (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 16,
+    "description": "Honma to cross / L-cross (2 s.).",
+    "value": "D"
+  },
+  {
+    "number": 17,
+    "description": "Honma to V cross (2s.).",
+    "value": "E"
+  },
+  {
+    "number": 22,
+    "description": "Bwd. swing, salto fwd p. to cross or L-cross (2s.).",
+    "value": "D"
+  },
+  {
+    "number": 27,
+    "description": "Uprise fwd. to cross or L-cross (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 33,
+    "description": "Uprise bwd. to cross or L-cross (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 39,
+    "description": "Kip to cross, or L-cross (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 45,
+    "description": "Back kip to cross or L-cross (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 42,
+    "description": "Kip to inverted swallow (2 s.).",
+    "value": "F"
+  },
+  {
+    "number": 40,
+    "description": "Kip to V cross (2 s.).",
+    "value": "D"
+  },
+  {
+    "number": 46,
+    "description": "Back kip to support scale (2 s.).",
+    "value": "D"
+  },
+  {
+    "number": 47,
+    "description": "Back kip to swallow (2 s.).",
+    "value": "E"
+  },
+  {
+    "number": 50,
+    "description": "Felge upward to support with straddled legs supported above the rings (2 s.).",
+    "value": "B"
+  },
+  {
+    "number": 53,
+    "description": "Back kip to inverted cross (2 s.).",
+    "value": "E"
+  },
+  {
+    "number": 56,
+    "description": "Felge upward to support scale straddled (2s.)",
+    "value": "B"
+  },
+  {
+    "number": 57,
+    "description": "Felge upward to cross or L-cross (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 58,
+    "description": "Felge upward to support scale (2 s.).",
+    "value": "D"
+  },
+  {
+    "number": 59,
+    "description": "Felge upward to Swallow (2 s.).",
+    "value": "E"
+  },
+  {
+    "number": 60,
+    "description": "Uprise forward to inverted swallow (2s.).",
+    "value": "F"
+  },
+  {
+    "number": 65,
+    "description": "Felge upward to invert. cross (2 s.).",
+    "value": "E"
+  },
+  {
+    "number": 68,
+    "description": "Uprise bwd. to support scale straddled (2 s.).",
+    "value": "B"
+  },
+  {
+    "number": 70,
+    "description": "Uprise bwd. to support scale (2 s.).",
+    "value": "D"
+  },
+  {
+    "number": 71,
+    "description": "Uprise bwd. to sup. scale at ring height (2s.).",
+    "value": "E"
+  },
+  {
+    "number": 73,
+    "description": "74.",
+    "value": "A"
+  },
+  {
+    "number": 77,
+    "description": "Uprise bwd. to inverted cross (2s.).",
+    "value": "E"
+  },
+  {
+    "number": 82,
+    "description": "Felge bwd. straight to free sup. scale. (2s.)",
+    "value": "D"
+  },
+  {
+    "number": 1,
+    "description": "Salto fwd. piked or straight, also with 1/2 t.",
+    "value": "A"
+  },
+  {
+    "number": 2,
+    "description": "Salto fwd. piked or straight with 1/1t.",
+    "value": "B"
+  },
+  {
+    "number": 3,
+    "description": "Salto fwd. piked or straight with 3/2t.",
+    "value": "C"
+  },
+  {
+    "number": 4,
+    "description": "Salto fwd. piked or straight with 2/1 t.",
+    "value": "D"
+  },
+  {
+    "number": 9,
+    "description": "Double salto fwd. tucked or tucked with 1/2 t.",
+    "value": "C"
+  },
+  {
+    "number": 10,
+    "description": "Double salto fwd. tucked with 3/2t (also 1/1t.)",
+    "value": "D"
+  },
+  {
+    "number": 16,
+    "description": "Double salto fwd. piked or piked with 1/2 t.",
+    "value": "D"
+  },
+  {
+    "number": 17,
+    "description": "Double salto fwd. piked with 3/2 t. (also 1/1 t.).",
+    "value": "E"
+  },
+  {
+    "number": 25,
+    "description": "Salto bwd. piked or straight also with 1/2.",
+    "value": "A"
+  },
+  {
+    "number": 26,
+    "description": "Salto bwd. straight with 1/1 t.",
+    "value": "B"
+  },
+  {
+    "number": 27,
+    "description": "Salto bwd. straight with 2/1 t. or 3/2 t.",
+    "value": "C"
+  },
+  {
+    "number": 29,
+    "description": "Salto bwd. straight with 3/1t.",
+    "value": "E"
+  },
+  {
+    "number": 32,
+    "description": "Double salto bwd. tucked or piked.",
+    "value": "B"
+  },
+  {
+    "number": 33,
+    "description": "Double salto bwd. straight.",
+    "value": "C"
+  },
+  {
+    "number": 36,
+    "description": "Triple salto bwd. tucked.",
+    "value": "G"
+  },
+  {
+    "number": 42,
+    "description": "Triple salto bwd. piked.",
+    "value": "I"
+  },
+  {
+    "number": 45,
+    "description": "Double salto bwd. t. with 1/2 or 1/1t.",
+    "value": "C"
+  },
+  {
+    "number": 48,
+    "description": "Double salto bwd. t. with 5/2 t.",
+    "value": "F"
+  },
+  {
+    "number": 47,
+    "description": "Double salto bwd. t. with 2/1t.",
+    "value": "E"
+  },
+  {
+    "number": 51,
+    "description": "Salto bwd. str. with 1/1 t. and salto t.",
+    "value": "C"
+  },
+  {
+    "number": 52,
+    "description": "Double salto bwd. straight with 1/2 or 1/1t.",
+    "value": "D"
+  },
+  {
+    "number": 54,
+    "description": "Double salto bwd. straight with 3/2 or 2/1 t.",
+    "value": "F"
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "number": 1,
+    "description": "From hdst. lower to L-sit or strad. L-sit (2 s.).",
+    "value": "A"
+  },
+  {
+    "number": 2,
+    "description": "V-sit (2 2 s.).",
+    "value": "B"
+  },
+  {
+    "number": 3,
+    "description": "V-sit with legs horizontal. (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 9,
+    "description": "V-sit (2s) and press to hdst. (2s.). Also final phase with straddle.",
+    "value": "C"
+  },
+  {
+    "number": 10,
+    "description": "Manna (2 s.) and press to hdst. (2 s.). Also final phase with straddle.",
+    "value": "D"
+  },
+  {
+    "number": 7,
+    "description": "From stand, Swiss press to hdst. (2 s.).",
+    "value": "A"
+  },
+  {
+    "number": 8,
+    "description": "Piked body, str. arm or str. body, bent arm press to hdst. with legs together (2s.).",
+    "value": "B"
+  },
+  {
+    "number": 13,
+    "description": "Rock to hdst. from prone position (2 s.).",
+    "value": "A"
+  },
+  {
+    "number": 14,
+    "description": "Press from split, L-sit strad. or front sup. (2 s.).",
+    "value": "B"
+  },
+  {
+    "number": 16,
+    "description": "From Manna (2s.), turn over (dislocation) to handstand (2 s.).",
+    "value": "D"
+  },
+  {
+    "number": 20,
+    "description": "Press or lower or swing to Japanese hdst. (2s.).",
+    "value": "B"
+  },
+  {
+    "number": 19,
+    "description": "Handstand (2 s.).",
+    "value": "A"
+  },
+  {
+    "number": 21,
+    "description": "From split press to Japanese handstand (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 25,
+    "description": "Planche, legs straddle (2 s.). 26.",
+    "value": "A"
+  },
+  {
+    "number": 27,
+    "description": "Planche (2 s.). / Swallow (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 31,
+    "description": "1/2 or 1/1 turn in handstand or to handstand.",
+    "value": "A"
+  },
+  {
+    "number": 32,
+    "description": "From straddled planche (2 s.) press hdst. (2 s.).",
+    "value": "B"
+  },
+  {
+    "number": 34,
+    "description": "From Planche 2 s. press handstand (2 s.).",
+    "value": "D"
+  },
+  {
+    "number": 37,
+    "description": "From L-sit, etc., turn over bwd. to stand.",
+    "value": "A"
+  },
+  {
+    "number": 44,
+    "description": "Endo roll to handstand (2 s.).",
+    "value": "B"
+  },
+  {
+    "number": 45,
+    "description": "Endo roll piked to handstand legs together (2 s.).",
+    "value": "C"
+  },
+  {
+    "number": 49,
+    "description": "Forward walkover.",
+    "value": "A"
+  },
+  {
+    "number": 55,
+    "description": "Cross or side split (stop required).",
+    "value": "A"
+  },
+  {
+    "number": 61,
+    "description": "Any standing scale (2 s.).",
+    "value": "A"
+  },
+  {
+    "number": 62,
+    "description": "Any standing scale with 180\u00b0 straddle, nohand hold (2s.).",
+    "value": "B"
+  },
+  {
+    "number": 67,
+    "description": "Jump bwd. to front support.",
+    "value": "A"
+  },
+  {
+    "number": 68,
+    "description": "Jump bwd. with pike-stretch or with 1/1 turn to front support",
+    "value": "B"
+  },
+  {
+    "number": 73,
+    "description": "Butterfly.",
+    "value": "A"
+  },
+  {
+    "number": 79,
+    "description": "circle or flair.",
+    "value": "A"
+  },
+  {
+    "number": 74,
+    "description": "Butterfly with 1/1 twist fwd. or bwd.",
+    "value": "B"
+  },
+  {
+    "number": 80,
+    "description": "Circles or flair to handstand.",
+    "value": "B"
+  },
+  {
+    "number": 75,
+    "description": "Butterfly with 2/1 twist.",
+    "value": "C"
+  },
+  {
+    "number": 81,
+    "description": "Flair or circle to hdst. continue to flair or circle.",
+    "value": "C"
+  },
+  {
+    "number": 82,
+    "description": "lairhoppingwith360\u00b0t.bwd.thr.hdstandback to flair (2 hops).",
+    "value": "D"
+  },
+  {
+    "number": 86,
+    "description": "Lower from hdst. to flair or circle.",
+    "value": "B"
+  },
+  {
+    "number": 91,
+    "description": "Flair with 1/2 spindle.",
+    "value": "A"
+  },
+  {
+    "number": 92,
+    "description": "Flair with 1/1 spindle (in 2 circles).",
+    "value": "B"
+  },
+  {
+    "number": 93,
+    "description": "Flair with >270 spindle (in 2 circles) directly to handstand.",
+    "value": "C"
+  },
+  {
+    "number": 98,
+    "description": "Flair with 1/2 spindle to handstand.",
+    "value": "B"
+  },
+  {
+    "number": 100,
+    "description": "Flair with > 270\u00b0 spindle (in 2 circles) directly to handstand and continue to circle or flair.",
+    "value": "D"
+  },
+  {
+    "number": 103,
+    "description": "Russian wendeswing with 360\u00b0 or 540\u00b0.",
+    "value": "A"
+  },
+  {
+    "number": 109,
+    "description": "Roll bwd. through hdst. with 1/2t.",
+    "value": "A"
+  },
+  {
+    "number": 104,
+    "description": "Russian wendeswing with 720\u00b0 or 900\u00b0.",
+    "value": "B"
+  },
+  {
+    "number": 105,
+    "description": "Russian wendeswing with 1080\u00b0 or more.",
+    "value": "C"
+  },
+  {
+    "number": 110,
+    "description": "Roll bwd. with hop 1/1 t. through hdst.",
+    "value": "B"
+  },
+  {
+    "number": 1,
+    "description": "Forward handspring or flyspring. 2.",
+    "value": "A"
+  },
+  {
+    "number": 4,
+    "description": "Handspring salto fwd. tuck.",
+    "value": "D"
+  },
+  {
+    "number": 7,
+    "description": "Dive roll.",
+    "value": "A"
+  },
+  {
+    "number": 13,
+    "description": "Salto fwd. tucked or piked, also with 1/2t.",
+    "value": "A"
+  },
+  {
+    "number": 14,
+    "description": "Salto fwd. straight, also with 1/2 t.",
+    "value": "B"
+  },
+  {
+    "number": 16,
+    "description": "Double salto fwd. tucked, also with 1/2t.",
+    "value": "D"
+  },
+  {
+    "number": 17,
+    "description": "Double salto fwd. piked, also with 1/2t.",
+    "value": "E"
+  },
+  {
+    "number": 36,
+    "description": "Double salto fwd. tucked with 1/1 turn.",
+    "value": "F"
+  },
+  {
+    "number": 38,
+    "description": "Salto fwd. t. or p. to front support.",
+    "value": "B"
+  },
+  {
+    "number": 42,
+    "description": "Double salto fwd. tucked with 3/2 turn.",
+    "value": "F"
+  },
+  {
+    "number": 46,
+    "description": "Jump fwd. with 1/2 t. to dbl. salto bwd. Tuck",
+    "value": "D"
+  },
+  {
+    "number": 48,
+    "description": "Double salto fwd. piked or straight with 3/2turn.",
+    "value": "G"
+  },
+  {
+    "number": 1,
+    "description": "Salto backwards tucked or piked. 2. Salto backwards str. or Tempo salto bwd.",
+    "value": "A"
+  },
+  {
+    "number": 3,
+    "description": "Double salto bwd. tucked.",
+    "value": "C"
+  },
+  {
+    "number": 4,
+    "description": "Salto bwd. with 1/1 t. and salto bwd.",
+    "value": "D"
+  },
+  {
+    "number": 5,
+    "description": "Double salto bwd. tucked with 2/1 t. or double salto bwd t. with 3/2 t..or salto bwd.",
+    "value": "E"
+  },
+  {
+    "number": 6,
+    "description": "Double salto bwd. tucked with 3/1 t.",
+    "value": "G"
+  },
+  {
+    "number": 11,
+    "description": "Arabian jumpbwd. to double salto fwd piked, also with 12. Double salto bwd. tucked with 5/2t.",
+    "value": "E"
+  },
+  {
+    "number": 12,
+    "description": "Double salto bwd. tucked with 5/2t.",
+    "value": "F"
+  },
+  {
+    "number": 18,
+    "description": "Triple salto bwd. tucked.",
+    "value": "I"
+  },
+  {
+    "number": 7,
+    "description": "Salto backwards tucked or piked W. 1/2 t. or Arabian tucked or piked.",
+    "value": "A"
+  },
+  {
+    "number": 8,
+    "description": "Salto backwards str. w. 1/ t or or 1/1 t.",
+    "value": "B"
+  },
+  {
+    "number": 10,
+    "description": "Arabian jump bwd. to double salto fwd tucked, also with 1/2 t.",
+    "value": "D"
+  },
+  {
+    "number": 13,
+    "description": "Back handspring.",
+    "value": "A"
+  },
+  {
+    "number": 16,
+    "description": "Double salto bwd. piked.",
+    "value": "D"
+  },
+  {
+    "number": 24,
+    "description": "Triple salto bwd. piked.",
+    "value": "J"
+  },
+  {
+    "number": 29,
+    "description": "Double salto straddled with 1/1 t.",
+    "value": "E"
+  },
+  {
+    "number": 31,
+    "description": "Jump bwd. with 1/2 t. to roll fwd.",
+    "value": "A"
+  },
+  {
+    "number": 35,
+    "description": "Salto bwd. str. with 1/1 and salto bwd piked.",
+    "value": "E"
+  },
+  {
+    "number": 30,
+    "description": "Double salto str W 5/2 t.",
+    "value": "H"
+  },
+  {
+    "number": 36,
+    "description": "Salto bwd. str. with 2/1 and salto bwd piked.",
+    "value": "F"
+  },
+  {
+    "number": 42,
+    "description": "Double salto bwd. str. with 3/2 t. or Arabian Jump bwd. to dbl. salto fwd. str. with 1/1t.",
+    "value": "G"
+  },
+  {
+    "number": 48,
+    "description": "Double salto bwd. straight with 1/1t. or Arabian jump bwd. to dbl. salto fwd. str. with 1/2 t.",
+    "value": "F"
+  },
+  {
+    "number": 41,
+    "description": "Double salto bwd. straight or Double salto bwd.",
+    "value": "E"
+  },
+  {
+    "number": 54,
+    "description": "Double salto bwd. str. with 2/1t.",
+    "value": "G"
+  },
+  {
+    "number": 60,
+    "description": "Double salto bwd. with 7/2t.",
+    "value": "H"
+  },
+  {
+    "number": 66,
+    "description": "Double salto bwd. str. with 3/1t.",
+    "value": "I"
+  },
+  {
+    "number": 72,
+    "description": "Double salto bwd. str. with 7/2t.",
+    "value": "J"
+  },
+  {
+    "number": 1,
+    "description": "2. Salto fwd. tucked with 1/1 t., also with 3/2 t.",
+    "value": "A"
+  },
+  {
+    "number": 3,
+    "description": "Salto fwd. str. with 1/1 t., also with 3/2 t.",
+    "value": "C"
+  },
+  {
+    "number": 4,
+    "description": "Salto fwd. str. with 2/1 t.",
+    "value": "D"
+  },
+  {
+    "number": 5,
+    "description": "Salto fwd. str. with 5/2t",
+    "value": "E"
+  },
+  {
+    "number": 6,
+    "description": "Salto fwd. str. with 3/1t.",
+    "value": "F"
+  },
+  {
+    "number": 8,
+    "description": "Salto backwards str. W. 1/1 t",
+    "value": "B"
+  },
+  {
+    "number": 9,
+    "description": "Salto bwd. str. with 3/2 t. or 2/1t.",
+    "value": "C"
+  },
+  {
+    "number": 10,
+    "description": "Salto bwd. str. with 5/2 t.",
+    "value": "D"
+  },
+  {
+    "number": 11,
+    "description": "Salto bwd. str. with 7/2t",
+    "value": "E"
+  },
+  {
+    "number": 36,
+    "description": "Salto fwd. str. with 7/2 t.",
+    "value": "G"
+  },
+  {
+    "number": 14,
+    "description": "Salto backwards tucked W. 3/2 t.",
+    "value": "B"
+  },
+  {
+    "number": 22,
+    "description": "Salto bwd. str. with 3/1t.",
+    "value": "D"
+  },
+  {
+    "number": 24,
+    "description": "Salto bwd. str. with 4/1t.",
+    "value": "F"
+  }
+]

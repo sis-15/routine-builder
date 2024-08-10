@@ -1,0 +1,652 @@
+[
+  {
+    "number": 1,
+    "description": "Back uprise to handstand.",
+    "value": "A"
+  },
+  {
+    "number": 2,
+    "description": "Back uprise to hdst. with 1/1 turn also to mixt.",
+    "value": "B"
+  },
+  {
+    "number": 7,
+    "description": "Back uprise to handstand with 1/2 turn.",
+    "value": "A"
+  },
+  {
+    "number": 8,
+    "description": "Swing bwd. and pirouette to hang.",
+    "value": "B"
+  },
+  {
+    "number": 9,
+    "description": "Swing bwd. and pirouette to support.",
+    "value": "C"
+  },
+  {
+    "number": 13,
+    "description": "Giant swing fwd.",
+    "value": "A"
+  },
+  {
+    "number": 14,
+    "description": "Giant swing fwd.with 1/1turn in mixtgrip. 15.Giantswingfwd. with 1/1 turn in double elgrip",
+    "value": "B"
+  },
+  {
+    "number": 15,
+    "description": "Giantswingfwd. with 1/1 turn in double elgrip",
+    "value": "C"
+  },
+  {
+    "number": 19,
+    "description": "Giant swing fwd. with 1/2 t. thr. hdst.",
+    "value": "A"
+  },
+  {
+    "number": 20,
+    "description": "Flying giant swing fwd. or with 1/2 turn.",
+    "value": "B"
+  },
+  {
+    "number": 21,
+    "description": "Flying giant swing fwd. with 1/1 t.",
+    "value": "C"
+  },
+  {
+    "number": 26,
+    "description": "Giant swing fwd. with one arm in ungr.",
+    "value": "B"
+  },
+  {
+    "number": 27,
+    "description": "On one arm, giant swing fwd. W. 1/1t. to el-grip and 1/1 t.",
+    "value": "C"
+  },
+  {
+    "number": 31,
+    "description": "Giant swing bwd.",
+    "value": "A"
+  },
+  {
+    "number": 37,
+    "description": "Giant swing bwd. with 1/2 turn.",
+    "value": "A"
+  },
+  {
+    "number": 43,
+    "description": "Giant swing bwd. with hop to undergrip.",
+    "value": "A"
+  },
+  {
+    "number": 44,
+    "description": "Flying giant swing bwd.",
+    "value": "B"
+  },
+  {
+    "number": 45,
+    "description": "Flying giant swing bwd. with 1/1t.",
+    "value": "C"
+  },
+  {
+    "number": 50,
+    "description": "Giant swing bwd. with hop 1/2 t. to el-grip.",
+    "value": "B"
+  },
+  {
+    "number": 51,
+    "description": "Giant swing bwd. with hop 3/2t. to undergrip, mixed el-grip.",
+    "value": "C"
+  },
+  {
+    "number": 52,
+    "description": "Giant swing bwd. with hop 3/2 t. to double el-grip 53.",
+    "value": "D"
+  },
+  {
+    "number": 56,
+    "description": "Giant swing bwd. with 1/2 t. to el-grip.",
+    "value": "B"
+  },
+  {
+    "number": 62,
+    "description": "Long swing fwd. with hop to el-grip.",
+    "value": "B"
+  },
+  {
+    "number": 68,
+    "description": "El-grip giant swing.",
+    "value": "B"
+  },
+  {
+    "number": 69,
+    "description": "Giant swing rearways fwd. (Russian giant).",
+    "value": "C"
+  },
+  {
+    "number": 70,
+    "description": "Giant swing rw. bwd. (Czech giant swing).",
+    "value": "D"
+  },
+  {
+    "number": 75,
+    "description": "El-grip giant",
+    "value": "C"
+  },
+  {
+    "number": 2,
+    "description": "Back uprise and straddle over to hang rw.",
+    "value": "B"
+  },
+  {
+    "number": 3,
+    "description": "Back uprise and strad. hecht with 1/2t. to hang.",
+    "value": "C"
+  },
+  {
+    "number": 9,
+    "description": "Markelov str. with legs together .also with 1/2 t.",
+    "value": "C"
+  },
+  {
+    "number": 15,
+    "description": "Swing fwd. and vault bwd. strad. to hang, also with 1/2 t.",
+    "value": "C"
+  },
+  {
+    "number": 6,
+    "description": "Back uprise and hecht straight with 3/2t. to hang.",
+    "value": "G"
+  },
+  {
+    "number": 18,
+    "description": "Tkatchev straight with 1/1t.",
+    "value": "G"
+  },
+  {
+    "number": 16,
+    "description": "Tkatchev straight, also with 1/2t. to mix el-grip into back uprise to hdst.",
+    "value": "D"
+  },
+  {
+    "number": 21,
+    "description": "Swing fwd. and vault bwd. piked to hang, also with 1/2 t.",
+    "value": "C"
+  },
+  {
+    "number": 23,
+    "description": "Tkatchev straddled 1/2 t. to double el-grip.",
+    "value": "E"
+  },
+  {
+    "number": 26,
+    "description": "Back uprise and piked vault with 1/2 t. to hang.",
+    "value": "B"
+  },
+  {
+    "number": 28,
+    "description": "Stalder or free hip circle bwd to Tkatchev29. Piatti straight. also with 1/2t. to mix el-grip into straddle, also with 1/2 t. back uprise to hdst.",
+    "value": "D"
+  },
+  {
+    "number": 29,
+    "description": "Piatti straight. also with 1/2t. to mix el-grip into straddle, also with 1/2 t. back uprise to hdst.",
+    "value": "E"
+  },
+  {
+    "number": 32,
+    "description": "Back uprise and rear vault with 1/4 t. to hang.",
+    "value": "B"
+  },
+  {
+    "number": 34,
+    "description": "Piatti piked.also W. .1/2t.",
+    "value": "D"
+  },
+  {
+    "number": 36,
+    "description": "Piatti straight with 1/1 turn.",
+    "value": "H"
+  },
+  {
+    "number": 42,
+    "description": "Salto fwd. straight with 1/1 t. also from el grip",
+    "value": "G"
+  },
+  {
+    "number": 39,
+    "description": "Swing bwd. And salto fwd t. or strad. to hg. Also from el-grip.40. Swing bwd. and salto fwd. p. to hg. also from from el-grip el-grip.",
+    "value": "C"
+  },
+  {
+    "number": 40,
+    "description": "Swing bwd. and salto fwd. p. to hg. also from el-grip.",
+    "value": "D"
+  },
+  {
+    "number": 41,
+    "description": "Salto fwd. straight, also from el-grip.",
+    "value": "E"
+  },
+  {
+    "number": 48,
+    "description": "Salto fwd. straight with 2/1 also from el grip.",
+    "value": "H"
+  },
+  {
+    "number": 51,
+    "description": "Czech giant and vault bwd. strad. to hang.",
+    "value": "C"
+  },
+  {
+    "number": 57,
+    "description": "Swing fwd. 1/2t. to salto fwd. strad. to hang.",
+    "value": "C"
+  },
+  {
+    "number": 52,
+    "description": "Swing fwd. and counter salto fwd. straddled to hang.",
+    "value": "D"
+  },
+  {
+    "number": 58,
+    "description": "Swing fwd. and salto bwd. piked W. 1/2 t. to hang.",
+    "value": "D"
+  },
+  {
+    "number": 60,
+    "description": "Swing fwd. and salto bwd. W. 3/2t. to hang.",
+    "value": "G"
+  },
+  {
+    "number": 65,
+    "description": "Saltofwd, tuck over the bar, alsofromel-grip.",
+    "value": "E"
+  },
+  {
+    "number": 66,
+    "description": "Gaylord with 1/2t.",
+    "value": "G"
+  },
+  {
+    "number": 72,
+    "description": "Gaylord with 1/1t.",
+    "value": "H"
+  },
+  {
+    "number": 76,
+    "description": ".).",
+    "value": "D"
+  },
+  {
+    "number": 78,
+    "description": "Gaylord piked.",
+    "value": "F"
+  },
+  {
+    "number": 82,
+    "description": "Salto bwd. 1/2 t. tucked over the bar.",
+    "value": "D"
+  },
+  {
+    "number": 88,
+    "description": "Double salto bwd. t. over the bar.",
+    "value": "D"
+  },
+  {
+    "number": 84,
+    "description": "Pegan piked.",
+    "value": "H"
+  },
+  {
+    "number": 83,
+    "description": "Salto bwd. 1/2 t. piked over the bar.",
+    "value": "E"
+  },
+  {
+    "number": 89,
+    "description": "Kovacs with 1/1 t.",
+    "value": "E"
+  },
+  {
+    "number": 90,
+    "description": "Kovacs with 2/1t.",
+    "value": "H"
+  },
+  {
+    "number": 95,
+    "description": "Kovacs piked or straight.",
+    "value": "E"
+  },
+  {
+    "number": 96,
+    "description": "Kovacs straight or piked with 1/1 turn.",
+    "value": "G"
+  },
+  {
+    "number": 102,
+    "description": "Kovacs straight with 2/1 turn.",
+    "value": "I"
+  },
+  {
+    "number": 108,
+    "description": "Kovacs with 3/2 t. to mix grip.",
+    "value": "G"
+  },
+  {
+    "number": 1,
+    "description": "Kip to hdst. or from mixed grip to hdst",
+    "value": "A"
+  },
+  {
+    "number": 8,
+    "description": "From hdst., free hip circle fwd. thr. hdst.",
+    "value": "B"
+  },
+  {
+    "number": 17,
+    "description": ".",
+    "value": "E"
+  },
+  {
+    "number": 13,
+    "description": "From hang or from support, free hip circle",
+    "value": "A"
+  },
+  {
+    "number": 25,
+    "description": "From hang or from support, free hip circle hop to 26.",
+    "value": "A"
+  },
+  {
+    "number": 32,
+    "description": "Free circle fwd. straddled thr. hdst.",
+    "value": "B"
+  },
+  {
+    "number": 33,
+    "description": "Free circle fwd. legs together thr. hdst.",
+    "value": "C"
+  },
+  {
+    "number": 38,
+    "description": "Free circle bwd. straddle thr. hdst.",
+    "value": "B"
+  },
+  {
+    "number": 40,
+    "description": "Stalder with hop 3/2 turn through hdst. in mix el-grip.",
+    "value": "D"
+  },
+  {
+    "number": 41,
+    "description": "Stalder with hop 3/2 turn through hdst. in el-grip.",
+    "value": "E"
+  },
+  {
+    "number": 45,
+    "description": "Stalder legs together thr. hdst.",
+    "value": "C"
+  },
+  {
+    "number": 56,
+    "description": "Stalden with hop through hdst.",
+    "value": "B"
+  },
+  {
+    "number": 57,
+    "description": "Stalder legs together with hop through hdst.",
+    "value": "C"
+  },
+  {
+    "number": 63,
+    "description": "Stoop circle rearward fwd. through hdst.",
+    "value": "C"
+  },
+  {
+    "number": 64,
+    "description": "Adler with 1/2 t. through hdst. in ovgr.",
+    "value": "D"
+  },
+  {
+    "number": 65,
+    "description": "Adler and 1/1 t. through hdst. in ungr.",
+    "value": "E"
+  },
+  {
+    "number": 70,
+    "description": "Adler hop to hdst. in ungr. or ovgr. or mixed grip",
+    "value": "D"
+  },
+  {
+    "number": 76,
+    "description": "Adler and 1/1 t. thr. hdst. in mixed grip, also with hop",
+    "value": "D"
+  },
+  {
+    "number": 81,
+    "description": "Stoop in and free back toss to dorsal hang",
+    "value": "C"
+  },
+  {
+    "number": 79,
+    "description": "Back toss to dorsal hang.",
+    "value": "A"
+  },
+  {
+    "number": 80,
+    "description": "From dorsal hang, uprise fwd. to support rw.",
+    "value": "B"
+  },
+  {
+    "number": 87,
+    "description": "Steineman uprise W. stoop or to hdst.",
+    "value": "C"
+  },
+  {
+    "number": 92,
+    "description": "Steineman uprise W. flank bwd. to sup. or hang.",
+    "value": "B"
+  },
+  {
+    "number": 99,
+    "description": "Endo in el-grip thr. hdst.",
+    "value": "C"
+  },
+  {
+    "number": 100,
+    "description": "Endo legs together in el-grip thr. hdst.",
+    "value": "D"
+  },
+  {
+    "number": 103,
+    "description": "Stoop circle fwd. to straddle cut to hang or sup.",
+    "value": "A"
+  },
+  {
+    "number": 104,
+    "description": "Stoop circle fwd. to straddle cut through hdst.",
+    "value": "B"
+  },
+  {
+    "number": 105,
+    "description": "Stoop circle fwd. to straddle cut with 1/2 t.",
+    "value": "C"
+  },
+  {
+    "number": 106,
+    "description": "Carballo with 1/2 turn to mixed el-grip.",
+    "value": "D"
+  },
+  {
+    "number": 107,
+    "description": "Quintero to el-grip.",
+    "value": "E"
+  },
+  {
+    "number": 1,
+    "description": "Salto fwd. piked or straight, also with 1/2 t.",
+    "value": "A"
+  },
+  {
+    "number": 2,
+    "description": "Salto fwd. str. with 1/1 or 3/2t.",
+    "value": "B"
+  },
+  {
+    "number": 3,
+    "description": "Salto fwd. str. with 2/1 or 5/2 t.",
+    "value": "C"
+  },
+  {
+    "number": 9,
+    "description": "Double salto fwd. t. or p.or with 1/2 turn.",
+    "value": "C"
+  },
+  {
+    "number": 6,
+    "description": "Triple salto fwd. t. or with 1/2t.",
+    "value": "G"
+  },
+  {
+    "number": 10,
+    "description": "Double salto fwd. t. or p. with 1/1 or 3/2 t.",
+    "value": "D"
+  },
+  {
+    "number": 11,
+    "description": "Double salto fwd. t. or p. with 2/1 or 5/2",
+    "value": "E"
+  },
+  {
+    "number": 17,
+    "description": "Double salto fwd. str. with 1/1 or 3/2t.",
+    "value": "E"
+  },
+  {
+    "number": 16,
+    "description": "Double salto fwd. str. or with 1/2 t. or over the bar",
+    "value": "D"
+  },
+  {
+    "number": 21,
+    "description": "Double salto fwd. t. or p. or with 1/2 turn over the bar.",
+    "value": "C"
+  },
+  {
+    "number": 22,
+    "description": "Dbl. salto fwd. t. or p. W. 1/1 or 3/2 t. over the bar.",
+    "value": "D"
+  },
+  {
+    "number": 25,
+    "description": "Salto bwd. piked or str. also with 1/2 or 1/1t.",
+    "value": "A"
+  },
+  {
+    "number": 26,
+    "description": "Salto bwd. str. with 3/2 or 2/1t.",
+    "value": "B"
+  },
+  {
+    "number": 32,
+    "description": "Double salto bwd. tuck or pike.",
+    "value": "B"
+  },
+  {
+    "number": 27,
+    "description": "Salto bwd. str. with 5/2 or 3/1 t.",
+    "value": "C"
+  },
+  {
+    "number": 33,
+    "description": "Double salto bwd. t. with 1/1t.",
+    "value": "C"
+  },
+  {
+    "number": 34,
+    "description": "Double salto bwd. t. with 2/1 t.",
+    "value": "D"
+  },
+  {
+    "number": 39,
+    "description": "Double salto bwd. str.",
+    "value": "C"
+  },
+  {
+    "number": 40,
+    "description": "Double salto bwd. str. with 1/1 t.",
+    "value": "D"
+  },
+  {
+    "number": 41,
+    "description": "Double salto bwd. str. with 2/1 t.",
+    "value": "E"
+  },
+  {
+    "number": 42,
+    "description": "Double salto bwd. str. with 3/1t.",
+    "value": "F"
+  },
+  {
+    "number": 48,
+    "description": "Triple salto bwd. t. or over the bar.",
+    "value": "F"
+  },
+  {
+    "number": 52,
+    "description": "Double salto bwd. t. with 2/1 t. over the bar",
+    "value": "D"
+  },
+  {
+    "number": 54,
+    "description": "Triple salto bwd. p.",
+    "value": "G"
+  },
+  {
+    "number": 50,
+    "description": "Double salto bwd. t. over the bar.",
+    "value": "B"
+  },
+  {
+    "number": 51,
+    "description": "Doble salto bwd. t. with 1/1 t. over the bar.",
+    "value": "C"
+  },
+  {
+    "number": 60,
+    "description": "Triple salto bwd. t. with 1/1t.",
+    "value": "G"
+  },
+  {
+    "number": 57,
+    "description": "Double salto bwd. str over the bar.",
+    "value": "C"
+  },
+  {
+    "number": 58,
+    "description": "Double salto bwd. str. W. 1/1 t. over the bar.",
+    "value": "D"
+  },
+  {
+    "number": 59,
+    "description": "Double salto bwd str. W. 3/2 or 2/1 turn over the bar.",
+    "value": "E"
+  },
+  {
+    "number": 62,
+    "description": "Hecht w. 1/1 or 3/2 t.",
+    "value": "B"
+  },
+  {
+    "number": 64,
+    "description": "Hecht W. 2/1 t.",
+    "value": "D"
+  },
+  {
+    "number": 61,
+    "description": "Hecht strad.) hecht or hechtw. 1/2 t.",
+    "value": "A"
+  }
+]

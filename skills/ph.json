@@ -1,0 +1,472 @@
+[
+  {
+    "number": 1,
+    "description": "Scissor forward. 2. Scissor forward with travel sideways (also with 1/2t",
+    "value": "A"
+  },
+  {
+    "number": 3,
+    "description": "Scissor fwd. with hop sideways from one end to the other (3/3).",
+    "value": "C"
+  },
+  {
+    "number": 7,
+    "description": "Scissor forward with 1/2t.",
+    "value": "A"
+  },
+  {
+    "number": 9,
+    "description": "Double scissor fwd. (1/4t. fwd. a. 1/4t. bwd.) with travel sideways.",
+    "value": "C"
+  },
+  {
+    "number": 8,
+    "description": "Double scissor fwd. (1/4 t. fwd. a. 1/4 t. bwd.).",
+    "value": "B"
+  },
+  {
+    "number": 10,
+    "description": "Double scissor forward sideways from one end to the other (3/3).",
+    "value": "D"
+  },
+  {
+    "number": 15,
+    "description": "Double Scissor fwd. with travel sideways through 16.",
+    "value": "C"
+  },
+  {
+    "number": 20,
+    "description": "Leg cut or undercut bwd. through handstand and lower to support with straddle legs.",
+    "value": "B"
+  },
+  {
+    "number": 22,
+    "description": "Scissor fwd. with 1/4 t. through handstand on 1 pommel, lower to support with straddle legs on the other arm (with legs changing)",
+    "value": "D"
+  },
+  {
+    "number": 25,
+    "description": "Scissor backward. 26. Scissor bwd. with travel sideways (also with 1/2 t.). 27. Scissor bwd. with hop sideways from one end to",
+    "value": "A"
+  },
+  {
+    "number": 31,
+    "description": "Scissor backward with 1/2 turn.",
+    "value": "A"
+  },
+  {
+    "number": 32,
+    "description": "Double scissor bwd. (1/4 t. fwd. a. 1/4 t. bwd).",
+    "value": "B"
+  },
+  {
+    "number": 39,
+    "description": "Swing bwd. W. 1/4t. through handstand on 1 pommel (also with 1/4 t. after), lower to support with straddle legs (with legs changing)",
+    "value": "C"
+  },
+  {
+    "number": 1,
+    "description": "Any circle or flair in side support. 2. Circle in side support outside pommels or between 3. 4.",
+    "value": "A"
+  },
+  {
+    "number": 7,
+    "description": "Circles in cross support frontways on end.",
+    "value": "A"
+  },
+  {
+    "number": 8,
+    "description": "Circles in cross support on 1 pommel (from or to 1/4 t. fwd.).",
+    "value": "B"
+  },
+  {
+    "number": 13,
+    "description": "Circles in cross support rearways on end.",
+    "value": "A"
+  },
+  {
+    "number": 14,
+    "description": "Circles in cross support between the pommels.",
+    "value": "B"
+  },
+  {
+    "number": 30,
+    "description": "Any 1/1 spindle with both pommels between the hands (flair or circle).",
+    "value": "F"
+  },
+  {
+    "number": 25,
+    "description": "Any 1/4 spindle 26. Any 1/2 spindle 27. 28. Any side support pommel between hands 1/1",
+    "value": "A"
+  },
+  {
+    "number": 29,
+    "description": "Any side support 1/1 spindle with hand support to the other side and return (max. 2 flairs or circles)",
+    "value": "E"
+  },
+  {
+    "number": 35,
+    "description": "1/1 spindle W. legs straddle or together on the pommels inside max. 2 circles.",
+    "value": "E"
+  },
+  {
+    "number": 36,
+    "description": "Cross support, 1/1 spindle with hands between the pommels max. 2 circles.",
+    "value": "F"
+  },
+  {
+    "number": 38,
+    "description": "Direct St\u00f6ckli. A (DSA) on the pommels or pommel between hands.",
+    "value": "B"
+  },
+  {
+    "number": 34,
+    "description": "Any 1/1 spindle within max. 2 circles on the end.",
+    "value": "D"
+  },
+  {
+    "number": 40,
+    "description": "Direct St\u00f6ckli A (DSA) outside pommels.",
+    "value": "D"
+  },
+  {
+    "number": 44,
+    "description": "Direct St\u00f6ckli B (DSB).",
+    "value": "B"
+  },
+  {
+    "number": 54,
+    "description": "Reverse St\u00f6ckli, DSA or pommel circle straddle through handstand, 3/3 travel (fwd. bwd), 360\u00b0 turn to flairs.",
+    "value": "F"
+  },
+  {
+    "number": 49,
+    "description": "50. 51. Flair or circle through handstand (with or 52. Flair with hop travel bwd. through handstand and",
+    "value": "A"
+  },
+  {
+    "number": 55,
+    "description": "Double rear (kehr).",
+    "value": "A"
+  },
+  {
+    "number": 56,
+    "description": "Kehr with 270\u00b0 t. on 1p. (Sohn technique) from cross to side support.",
+    "value": "B"
+  },
+  {
+    "number": 57,
+    "description": "Kehr with 270\u00b0 t. on 1 pommel (Sohn technique) from side to cross support.",
+    "value": "C"
+  },
+  {
+    "number": 58,
+    "description": "Kehr with 1/1 turn on 1 pommel.",
+    "value": "D"
+  },
+  {
+    "number": 62,
+    "description": "Direct Tramlot.",
+    "value": "B"
+  },
+  {
+    "number": 68,
+    "description": "Reverse St\u00f6ckli 180\u00b0 (or 270\u00b0 from one pommel) turn in one circle.",
+    "value": "B"
+  },
+  {
+    "number": 69,
+    "description": "Reverse St\u00f6ckli with 270\u00b0 t. (Bezugo technique) from 2 pommels to cross support on 1 pommel",
+    "value": "C"
+  },
+  {
+    "number": 71,
+    "description": "Reverse St\u00f6ckli with 360\u00b0 t. on 1 pommel.",
+    "value": "E"
+  },
+  {
+    "number": 73,
+    "description": "Schwabenflank. 74. Czechkehre on the pommels or pommel between 75. 76. Czechkehre outside pommels",
+    "value": "A"
+  },
+  {
+    "number": 79,
+    "description": "Wendeswing fwd. with 1/2 t. to support fwd. on the 80.",
+    "value": "A"
+  },
+  {
+    "number": 85,
+    "description": "Russian wendeswing with 180\u00b0 or 270\u00b0.",
+    "value": "A"
+  },
+  {
+    "number": 91,
+    "description": "Russian wendeswing with 360\u00b0 or 540\u00b0.",
+    "value": "A"
+  },
+  {
+    "number": 92,
+    "description": "Russian wendeswing with 720\u00b0 or 900\u00b0",
+    "value": "B"
+  },
+  {
+    "number": 93,
+    "description": "Russian wendeswing with 1080\u00b0 or more.",
+    "value": "C"
+  },
+  {
+    "number": 97,
+    "description": "On the leather, Russian wendeswing with 180\u00b0, or 270\u00b0 also with travel.",
+    "value": "A"
+  },
+  {
+    "number": 103,
+    "description": "On the leather, Russian wendeswing with 360\u00b0 or",
+    "value": "A"
+  },
+  {
+    "number": 104,
+    "description": "On the leather, Russian wendeswing with 720\u00b0 or 900\u00b0.",
+    "value": "B"
+  },
+  {
+    "number": 105,
+    "description": "On the leather, Russian wendeswing with 1080\u00b0 106.",
+    "value": "C"
+  },
+  {
+    "number": 111,
+    "description": "Russian wendeswing with 360\u00b0 or 540\u00b0 on 1 pommel or between the pommels.",
+    "value": "C"
+  },
+  {
+    "number": 110,
+    "description": "Russian wendeswing with 180\u00b0 or 270\u00b0 on 1 pommel or between the pommels.",
+    "value": "B"
+  },
+  {
+    "number": 112,
+    "description": "720\u00b0 or 900\u00b0 Russian wendeswing on 1 pommel or 113. 1080\u00b0 Russian wendeswing or more on 1 114.",
+    "value": "D"
+  },
+  {
+    "number": 1,
+    "description": "Circles with any travel in side support (1/3) (also with 2. Circles with any travel in side support (3/3). 3. Any travel in side support (3/3), hands between",
+    "value": "A"
+  },
+  {
+    "number": 8,
+    "description": "Circles with any hop travel in side support (1/3)",
+    "value": "B"
+  },
+  {
+    "number": 9,
+    "description": "Circles with any hop travel 2x in side support (3/3).",
+    "value": "C"
+  },
+  {
+    "number": 11,
+    "description": "From side support beside the pommel, travel hop over 2 pommels to support fwd on other end (1-1 to 5-5).",
+    "value": "E"
+  },
+  {
+    "number": 15,
+    "description": "All travels with 1/2 spindle in side support.",
+    "value": "C"
+  },
+  {
+    "number": 17,
+    "description": "From an end side travel with 2x 1/2 spindle to other end.",
+    "value": "E"
+  },
+  {
+    "number": 14,
+    "description": "Travel fwd. or bwd. with 1/4 spindle to side support on 2 pommels.",
+    "value": "B"
+  },
+  {
+    "number": 22,
+    "description": "Any travel fwd. 3/3 with 1/2 Spindle from one pommel over the other pommel.",
+    "value": "D"
+  },
+  {
+    "number": 23,
+    "description": "Travel 3/3 over both pommels with 1/2 Spindle.",
+    "value": "E"
+  },
+  {
+    "number": 29,
+    "description": "Any3/3 travel in flairs with 1/1 Spindle inside 2 circles.",
+    "value": "E"
+  },
+  {
+    "number": 25,
+    "description": "26. 27.",
+    "value": "A"
+  },
+  {
+    "number": 32,
+    "description": "Travel fwd. in cross support (1/2 or 2/3).",
+    "value": "B"
+  },
+  {
+    "number": 33,
+    "description": "Travel fwd. in cross support with support on leather, pommel, pommel, leather (3/3)(1-2-4-5).",
+    "value": "C"
+  },
+  {
+    "number": 34,
+    "description": "Any other travel fwd. in cross support to other end(3/3).",
+    "value": "D"
+  },
+  {
+    "number": 40,
+    "description": "Any other travel bwd. in cross support to other end (3/3).",
+    "value": "D"
+  },
+  {
+    "number": 35,
+    "description": "Travel forward in cross support over both pommels (also with hop).",
+    "value": "E"
+  },
+  {
+    "number": 41,
+    "description": "Travel backward in cross support over both pommels (also with hop).",
+    "value": "E"
+  },
+  {
+    "number": 37,
+    "description": "Travel bwd. in cross support from one horse part or pommel to another (1/3).",
+    "value": "A"
+  },
+  {
+    "number": 38,
+    "description": "Travel bwd. in cross support (1/2 or 2/3).",
+    "value": "B"
+  },
+  {
+    "number": 39,
+    "description": "Travel bwd. in cross sup with support on leather, pommel, pommel, leather (3/3) (5-4-2-1).",
+    "value": "C"
+  },
+  {
+    "number": 46,
+    "description": "Kehre fwd., reverse St\u00f6ckli, kehre fwd.",
+    "value": "D"
+  },
+  {
+    "number": 49,
+    "description": "50. 51.",
+    "value": "A"
+  },
+  {
+    "number": 52,
+    "description": "Kehre bwd., kehre fwd., kehre bwd.",
+    "value": "D"
+  },
+  {
+    "number": 57,
+    "description": "From support on 1 pommel, Russian wendeswing fwd. to other end without support on or between the pommels (side to side support, side to cross support).",
+    "value": "C"
+  },
+  {
+    "number": 58,
+    "description": "From support on end, Russian wendeswing fwd. to",
+    "value": "D"
+  },
+  {
+    "number": 59,
+    "description": "On the leather, from cross support, Russian wendeswing with 360\u00b0 or more-over both pommels.",
+    "value": "E"
+  },
+  {
+    "number": 64,
+    "description": "From support 1-2, 3/3 travel in Russian type wendeswing with 630\u00b0 or more turning.",
+    "value": "D"
+  },
+  {
+    "number": 65,
+    "description": "Any 3/3 travel in Russian type wendeswing with 720\u00b0 or more turning W. two hands between pommels",
+    "value": "E"
+  },
+  {
+    "number": 70,
+    "description": "Any Russian wendeswing with 360\u00b0 t. and 3/3 travel.",
+    "value": "D"
+  },
+  {
+    "number": 73,
+    "description": "74. 75. Reverse St\u00f6ckli from cross support on end to the",
+    "value": "A"
+  },
+  {
+    "number": 76,
+    "description": "Reverse St\u00f6ckli from cross support on one end to the 77.",
+    "value": "D"
+  },
+  {
+    "number": 1,
+    "description": "Wende from circle (also from Russian wendeswing 180\u00b0 or 270\u00b0)",
+    "value": "A"
+  },
+  {
+    "number": 2,
+    "description": "Chaguinian to wende.",
+    "value": "B"
+  },
+  {
+    "number": 4,
+    "description": "From side support on end, circle or flair to handstand 5. DSA to handstand 3/3 with 450\u00b0 or more turn.",
+    "value": "D"
+  },
+  {
+    "number": 7,
+    "description": "On the end, Russian wendeswing with 360\u00b0 or 540\u00b0",
+    "value": "A"
+  },
+  {
+    "number": 8,
+    "description": "On the end, Russian wendeswing with 720\u00b0 or 900\u00b0",
+    "value": "B"
+  },
+  {
+    "number": 9,
+    "description": "On the end, Russian wendeswing with 1080\u00b0 or more.",
+    "value": "C"
+  },
+  {
+    "number": 10,
+    "description": "From pommels, circle with 1/4 turn to Russian",
+    "value": "D"
+  },
+  {
+    "number": 16,
+    "description": "DSA with hop bwd. through handstand on other end.",
+    "value": "D"
+  },
+  {
+    "number": 22,
+    "description": "180\u00b0 Russian from one end of the horse to the other end through handstand to dismount",
+    "value": "D"
+  },
+  {
+    "number": 13,
+    "description": "From side support wendeswing fwd. with 1/2 t. to",
+    "value": "A"
+  },
+  {
+    "number": 15,
+    "description": "DSA, reverse St\u00f6ckli or circle on one pommel through handstand.",
+    "value": "C"
+  },
+  {
+    "number": 21,
+    "description": "Circle or flair with hop travel bwd. through handstand.",
+    "value": "C"
+  },
+  {
+    "number": 20,
+    "description": "Circle or flair through handstand (also with 3/4 t.",
+    "value": "B"
+  }
+]

@@ -1,0 +1,397 @@
+[
+  {
+    "number": 101,
+    "description": "Hdspr. fwd. and salto fwd. t. w. 1/2 t. (or Cuervo t.) ",
+    "value": "2.4"
+  },
+  {
+    "number": 102,
+    "description": "Hdspr. fwd. and salto fwd. t.w. 1/1 t.",
+    "value": "2.8"
+  },
+  {
+    "number": 107,
+    "description": "Hdspr. fwd. and salto fwd. p.w. 1/2t. (Cuervo p.).",
+    "value": "2.8"
+  },
+  {
+    "number": 108,
+    "description": "Hdspr. fwd. and salto fwd. p.w.1/1t.",
+    "value": "3.2"
+  },
+  {
+    "number": 103,
+    "description": "Hdspr. fwd. and salto fwd. t. W. 3/2 t.",
+    "value": "3.2"
+  },
+  {
+    "number": 109,
+    "description": "Hdspr. fwd. and salto fwd. p.w. 3/2t.",
+    "value": "3.6"
+  },
+  {
+    "number": 115,
+    "description": "Hdspr. fwd. and salto fwd. str. W. 3/2t.",
+    "value": "4.4"
+  },
+  {
+    "number": 104,
+    "description": "Hdspr. fwd. and salto fwd. t.w. 2/1t.",
+    "value": "3.6"
+  },
+  {
+    "number": 117,
+    "description": "Handspring fwd. and salto fwd. str. W. 5/2 t.",
+    "value": "5.2"
+  },
+  {
+    "number": 118,
+    "description": "Handspring fwd. and salto fwd. str. W. 3/1t.",
+    "value": "5.6"
+  },
+  {
+    "number": 113,
+    "description": "Hdspr. fwd. and salto fwd. str. W. 1/2 t.",
+    "value": "3.6"
+  },
+  {
+    "number": 114,
+    "description": "Hdspr. fwd. and salto fwd.: str. w.1/1t.",
+    "value": "4.0"
+  },
+  {
+    "number": 116,
+    "description": "Hdspr. fwd. and salto fwd. str. W. 2/1t.",
+    "value": "4.8"
+  },
+  {
+    "number": 122,
+    "description": "Tsukahara t. with 5/2 t",
+    "value": "3.6"
+  },
+  {
+    "number": 120,
+    "description": "Tsukahara t. w.3/2 t.or Kasamatsu t. 1/2t",
+    "value": "2.8"
+  },
+  {
+    "number": 121,
+    "description": "Tsukahara t. with 2/1t.",
+    "value": "3.2"
+  },
+  {
+    "number": 119,
+    "description": "Hdspr. SW. w. 1/4 t. a. salto fwd. t. w. 1/2 t. or Tsuk. t. W. 1/1t.",
+    "value": "2.4"
+  },
+  {
+    "number": 125,
+    "description": "Tsukahara str. W. 1/1t. or Kasamatsu str. 126. Kasamatsustr. with 1/2 t. or Tsukahara str.w.3/2t.",
+    "value": "3.6"
+  },
+  {
+    "number": 126,
+    "description": "Kasamatsustr. with 1/2 t. or Tsukahara str.w.3/2t.",
+    "value": "4.0"
+  },
+  {
+    "number": 127,
+    "description": "Kasamatsu str. W. 1/1t. or Tsukahara str. W. 2/1t",
+    "value": "4.4"
+  },
+  {
+    "number": 133,
+    "description": "Kasamatsu str. with 5/2 t. or Tsukahara str. with 134.",
+    "value": "5.6"
+  },
+  {
+    "number": 131,
+    "description": "Kasamatsu str. with 3/2 t.",
+    "value": "4.8"
+  },
+  {
+    "number": 132,
+    "description": "Kasamatsu str. with 2/1t.",
+    "value": "5.2"
+  },
+  {
+    "number": 201,
+    "description": "Forward handspring. 202. Forward handspring with 1/2 t. ",
+    "value": "1.2"
+  },
+  {
+    "number": 202,
+    "description": "Forward handspring with 1/2 t. ",
+    "value": "1.4"
+  },
+  {
+    "number": 203,
+    "description": "Forward handspring with 1/1t.",
+    "value": "1.6"
+  },
+  {
+    "number": 204,
+    "description": "Forward handspring with 3/2 t.",
+    "value": "1.8"
+  },
+  {
+    "number": 205,
+    "description": "Forward handspring with 2/1t.",
+    "value": "2.0"
+  },
+  {
+    "number": 206,
+    "description": "Forward handspring with 5/2 t.",
+    "value": "2.2"
+  },
+  {
+    "number": 207,
+    "description": "Handspring fwd. and salto fwd. tucked.",
+    "value": "2.0"
+  },
+  {
+    "number": 213,
+    "description": "Handspring fwd. and salto fwd. piked.",
+    "value": "2.4"
+  },
+  {
+    "number": 219,
+    "description": "Handspring fwd. and salto fwd. str.",
+    "value": "3.2"
+  },
+  {
+    "number": 226,
+    "description": "Roche with 1/2 turn.",
+    "value": "5.2"
+  },
+  {
+    "number": 228,
+    "description": "Handspring fwd. and salto fwd. t. w. 1/2 t. and salto bwd. t.",
+    "value": "5.2"
+  },
+  {
+    "number": 225,
+    "description": "Handspring fwd. and dbl. salto fwd. t.",
+    "value": "4.8"
+  },
+  {
+    "number": 231,
+    "description": "Handspring fwd. and dbl. salto fwd. piked.",
+    "value": "5.2"
+  },
+  {
+    "number": 232,
+    "description": "Dragulescu piked.",
+    "value": "5.6"
+  },
+  {
+    "number": 301,
+    "description": "Handspring SW. with 1/4 t.",
+    "value": "1.2"
+  },
+  {
+    "number": 302,
+    "description": "Handspring SW. with 3/4t.",
+    "value": "1.4"
+  },
+  {
+    "number": 303,
+    "description": "Handspring SW. with 5/4 t.",
+    "value": "1.6"
+  },
+  {
+    "number": 307,
+    "description": "Handspring SW. w. 1/4 t. a. salto bwd. t.",
+    "value": "1.8"
+  },
+  {
+    "number": 308,
+    "description": "Tsukahara piked.",
+    "value": "2.0"
+  },
+  {
+    "number": 309,
+    "description": "Tsukahara t. with 1/2 t.",
+    "value": "2.0"
+  },
+  {
+    "number": 313,
+    "description": "Tsukahara straight.",
+    "value": "2.8"
+  },
+  {
+    "number": 314,
+    "description": "Tsukahara str. with 1/2t.",
+    "value": "3.2"
+  },
+  {
+    "number": 319,
+    "description": "Tsukahara with salto bwd.t.",
+    "value": "4.8"
+  },
+  {
+    "number": 320,
+    "description": "Tsukahara with salto bwd. piked.",
+    "value": "5.2"
+  },
+  {
+    "number": 321,
+    "description": "Double Tsukahara with 1/1 twist.",
+    "value": "5.6"
+  },
+  {
+    "number": 401,
+    "description": "Yurchenko t. with 1/1 t. 402. Yurchenko t. with 3/2 t. 403. Yurchenko t. with 2/1",
+    "value": "2.4"
+  },
+  {
+    "number": 404,
+    "description": "Yurchenko straight with 1/1t.",
+    "value": "3.6"
+  },
+  {
+    "number": 405,
+    "description": "Yurchenko straight with 3/2 t.",
+    "value": "4.0"
+  },
+  {
+    "number": 406,
+    "description": "Yurchenko straight with 2/1t.",
+    "value": "4.4"
+  },
+  {
+    "number": 407,
+    "description": "Yurchenko straight with 5/2 t.",
+    "value": "4.8"
+  },
+  {
+    "number": 408,
+    "description": "Yurchenko Straight 3/1t.",
+    "value": "5.2"
+  },
+  {
+    "number": 409,
+    "description": "Yurchenko Straight 7/2t.",
+    "value": "5.6"
+  },
+  {
+    "number": 413,
+    "description": "Round off, 1/2t. and hdspr. fwd. and salto fwd.",
+    "value": "2.6"
+  },
+  {
+    "number": 414,
+    "description": "Round off, 1/2 t. and hdspr. fwd. and salto fwd.",
+    "value": "3.0"
+  },
+  {
+    "number": 416,
+    "description": "Round off, 1/2 t. and hdspr. fwd. and salto fwd. ",
+    "value": "4.2"
+  },
+  {
+    "number": 417,
+    "description": "Round off, 1/2 t. and hdspr. fwd. and salto fwd.",
+    "value": "4.6"
+  },
+  {
+    "number": 415,
+    "description": "Round off, 1/2 t. and hdspr. fwd. and salto fwd.",
+    "value": "3.8"
+  },
+  {
+    "number": 419,
+    "description": "Round off, 1/2t. and hdspr. fwd. and salto fwd.",
+    "value": "5.0"
+  },
+  {
+    "number": 420,
+    "description": "Round off, 1/2 t. and hdspr. fwd. and salto fwd.",
+    "value": "5.4"
+  },
+  {
+    "number": 501,
+    "description": "Round off, handspring bwd.",
+    "value": "1.2"
+  },
+  {
+    "number": 502,
+    "description": "Round off, handspring bwd. with 1/2 turn.",
+    "value": "1.4"
+  },
+  {
+    "number": 503,
+    "description": "Round off, handspring bwd. with 1/1 turn.",
+    "value": "1.6"
+  },
+  {
+    "number": 508,
+    "description": "Yurchenko t. with 1/2 t.",
+    "value": "2.0"
+  },
+  {
+    "number": 509,
+    "description": "Yurchenko piked.",
+    "value": "2.0"
+  },
+  {
+    "number": 511,
+    "description": "Yurchenko straight with 1/2t.",
+    "value": "2.8"
+  },
+  {
+    "number": 510,
+    "description": "Yurchenko straight.",
+    "value": "2.8"
+  },
+  {
+    "number": 507,
+    "description": "Round off, hdspr. bwd. and salto bwd. t.",
+    "value": "1.8"
+  },
+  {
+    "number": 513,
+    "description": "Round off, 1/2 t. and handspring fwd.",
+    "value": "1.4"
+  },
+  {
+    "number": 514,
+    "description": "Round off, 1/2 t. and hdspr. fwd. with 1/2 t.",
+    "value": "1.6"
+  },
+  {
+    "number": 515,
+    "description": "Round off, 1/2 t. and hdspr. fwd. with 1/1t.",
+    "value": "1.8"
+  },
+  {
+    "number": 516,
+    "description": "Round off, 1/2 t. and hdspr. fwd. and salto fwd.",
+    "value": "2.2"
+  },
+  {
+    "number": 517,
+    "description": "Round off, 1/2 t. a. hdspr. fwd. and salto fwd. p.",
+    "value": "2.6"
+  },
+  {
+    "number": 518,
+    "description": "Round off, 1/2 t. and hdspr. fwd. and salto fwd.",
+    "value": "3.4"
+  },
+  {
+    "number": 519,
+    "description": "Yurchenko and salto bwd. tucked.",
+    "value": "4.8"
+  },
+  {
+    "number": 520,
+    "description": "Melissanidis piked.",
+    "value": "5.2"
+  },
+  {
+    "number": 521,
+    "description": "Round off, 1/2 t.a. hdspr. fwd. and double salto fwd. tucked.",
+    "value": "5.0"
+  }
+]

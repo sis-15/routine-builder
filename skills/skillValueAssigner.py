@@ -53,7 +53,8 @@ def process_files(file_list):
 
 if __name__ == '__main__':
     # List of text files to process
-    file_list = ['fx.txt', 'pb.txt', 'ph.txt', 'sr.txt', 'vt.txt', 'hb.txt']
+    # Skipping vault since values vary
+    file_list = ['fx.txt', 'pb.txt', 'ph.txt', 'sr.txt', 'hb.txt']
     
     # Process each file and create corresponding JSON files
     process_files(file_list)
