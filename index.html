@@ -7,25 +7,45 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Gymnastics Routine Builder</h1>
-  </header>
-  <main>
-    <section>
-      <h2>Select an Event</h2>
-        <label for="eventSelect"></label><select id="eventSelect">
-        <option value="fx">Floor</option>
-        <option value="vt">Vault</option>
-        <option value="hb">Highbar</option>
-        <option value="ph">Pommel Horse</option>
-        <option value="pb">Parallel Bars</option>
-        <option value="sr">Rings</option>
-      </select>
-    </section>
+  <div class="container">
+    <h2>Gymnastics Routine Builder</h2>
+    <form id="skill-form">
+        <label for="event">Select an event:</label>
+        <select id="event" name="event" onchange="loadSkills()">
+            <option value="">-- Select Event --</option>
+            <option value="fx">Floor</option>
+            <option value="ph">Pommel Horse</option>
+            <option value="sr">Still Rings</option>
+            <option value="vt">Vault</option>
+            <option value="pb">Parallel Bars</option>
+            <option value="hb">Horizontal Bar</option>
+        </select>
+
+        <label for="num-skills">Number of skills in routine:</label>
+        <input type="number" id="num-skills" name="num-skills" min="1" max="10" value="5">
+        
+        <button type="button" onclick="startRoutine()">Start Routine</button>
+    </form>
+    
+    <div id="skill-routine">
+        <h3>Routine Skills</h3>
+        <div id="skill-boxes"></div>
+        <button id="add-skill-btn" type="button" onclick="addNewSkill()">Add Skill</button>
+    </div>
+
+    <div class="pdf-link">
+        <a href="TrimmedCoP2025-2028.pdf" target="_blank">View Code of Points PDF</a>
+    </div>
+    <div id="total-start-value-container">
+      <h3>Total Start Value: <span id="total-start-value">10.0</span></h3>
+  </div>
+</div>
+
     <section id="skills">
       <!-- Skills will be dynamically loaded here -->
     </section>
   </main>
+  <div id="skillContainer"></div>
   <script src="script.js"></script>
 </body>
 </html>
