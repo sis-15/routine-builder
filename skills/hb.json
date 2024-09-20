@@ -37,7 +37,7 @@
   },
   {
     "number": 14,
-    "description": "Giant swing fwd.with 1/1turn in mixtgrip. 15.Giantswingfwd. with 1/1 turn in double elgrip",
+    "description": "Giant swing fwd.with 1/1turn in mixtgrip.",
     "value": "B",
     "Element Group": 1
   },
@@ -223,7 +223,7 @@
   },
   {
     "number": 28,
-    "description": "Stalder or free hip circle bwd to Tkatchev29. Piatti straight. also with 1/2t. to mix el-grip into straddle, also with 1/2 t. back uprise to hdst.",
+    "description": "Stalder or free hip circle bwd to Tkatchev",
     "value": "D",
     "Element Group": 2
   },
@@ -330,12 +330,6 @@
     "Element Group": 2
   },
   {
-    "number": 76,
-    "description": ".).",
-    "value": "D",
-    "Element Group": 2
-  },
-  {
     "number": 78,
     "description": "Gaylord piked.",
     "value": "F",
@@ -411,12 +405,6 @@
     "number": 8,
     "description": "From hdst., free hip circle fwd. thr. hdst.",
     "value": "B",
-    "Element Group": 3
-  },
-  {
-    "number": 17,
-    "description": ".",
-    "value": "E",
     "Element Group": 3
   },
   {
@@ -775,7 +763,7 @@
   },
   {
     "number": 61,
-    "description": "Hecht strad.) hecht or hechtw. 1/2 t.",
+    "description": "Hecht strad., hecht or hechtw. 1/2 t.",
     "value": "A",
     "Element Group": 4
   }

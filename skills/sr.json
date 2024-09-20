@@ -270,6 +270,12 @@
     "Element Group": 2
   },
   {
+    "number": 32,
+    "description": "Slow roll fwd. straight with bent arms, to",
+    "value": "B",
+    "Element Group": 2
+  },
+  {
     "number": 38,
     "description": "Slow roll bwd. slowly and straight. body to Lsit (2s.).",
     "value": "B",
@@ -669,12 +675,6 @@
     "number": 71,
     "description": "Uprise bwd. to sup. scale at ring height (2s.).",
     "value": "E",
-    "Element Group": 3
-  },
-  {
-    "number": 73,
-    "description": "74.",
-    "value": "A",
     "Element Group": 3
   },
   {

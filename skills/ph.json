@@ -1,8 +1,14 @@
 [
   {
     "number": 1,
-    "description": "Scissor forward. 2. Scissor forward with travel sideways (also with 1/2t",
+    "description": "Scissor forward.",
     "value": "A",
+    "Element Group": 1
+  },
+  {
+    "number": 2,
+    "description": "Scissor forward with travel sideways (also with 1/2t).",
+    "value": "B",
     "Element Group": 1
   },
   {
@@ -55,19 +61,19 @@
   },
   {
     "number": 25,
-    "description": "Scissor backward. 26. Scissor bwd. with travel sideways (also with 1/2 t.). 27. Scissor bwd. with hop sideways from one end to",
+    "description": "Scissor backward. ",
     "value": "A",
     "Element Group": 1
   },
   {
     "number": 26,
-    "description": " Scissor bwd. with travel sideways (also with 1/2 t.).",
+    "description": "Scissor bwd. with travel sideways (also with 1/2 t.).",
     "value": "B",
     "Element Group": 1
   },
   {
     "number": 27,
-    "description": "27. Scissor bwd. with hop sideways from one end to",
+    "description": "Scissor bwd. with hop sideways from one end to the other (1-2 to 4-5).",
     "value": "C",
     "Element Group": 1
   },
@@ -97,7 +103,7 @@
   },
   {
     "number": 2,
-    "description": "2. Circle in side support outside pommels or between.",
+    "description": "Circle in side support outside pommels or between.",
     "value": "B",
     "Element Group": 2
   },
@@ -133,13 +139,13 @@
   },
   {
     "number": 25,
-    "description": "Any 1/4 spindle 26. Any 1/2 spindle 27. 28. Any side support pommel between hands 1/1",
+    "description": "Any 1/4 spindle",
     "value": "A",
     "Element Group": 2
   },
   {
     "number": 26,
-    "description": "26. Any 1/2 spindle",
+    "description": " Any 1/2 spindle",
     "value": "B",
     "Element Group": 2
   },
@@ -355,13 +361,13 @@
   },
   {
     "number": 2,
-    "description": "2. Circles with any travel in side support (3/3).",
+    "description": "Circles with any travel in side support (3/3).",
     "value": "B",
     "Element Group": 3
   },
   {
     "number": 3,
-    "description": "3. Any travel in side support (3/3), hands between pommels.",
+    "description": "Any travel in side support (3/3), hands between pommels.",
     "value": "C",
     "Element Group": 3
   },
@@ -426,12 +432,6 @@
     "Element Group": 3
   },
   {
-    "number": 25,
-    "description": "26. 27.",
-    "value": "A",
-    "Element Group": 3
-  },
-  {
     "number": 32,
     "description": "Travel fwd. in cross support (1/2 or 2/3).",
     "value": "B",
@@ -492,12 +492,6 @@
     "Element Group": 3
   },
   {
-    "number": 49,
-    "description": "50. 51.",
-    "value": "A",
-    "Element Group": 3
-  },
-  {
     "number": 52,
     "description": "Kehre bwd., kehre fwd., kehre bwd.",
     "value": "D",
@@ -541,7 +535,7 @@
   },
   {
     "number": 73,
-    "description": "74. 75. Reverse St\u00f6ckli from cross support on end to the far pommel",
+    "description": "Reverse St\u00f6ckli from cross support on end to the far pommel",
     "value": "A",
     "Element Group": 3
   },
@@ -565,7 +559,7 @@
   },
   {
     "number": 4,
-    "description": "From side support on end, circle or flair to handstand 5. DSA to handstand 3/3 with 450\u00b0 or more turn.",
+    "description": "From side support on end, circle or flair to handstand",
     "value": "D",
     "Element Group": 4
   },
