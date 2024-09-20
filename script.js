@@ -58,6 +58,7 @@ document.getElementById("start-routine-btn").addEventListener("click", startRout
 document.getElementById("pdf-link-btn").addEventListener("click", function () {
     window.location.href = "TrimmedCoP2025-2028.pdf"; // Link to embedded PDF
 });
+document.getElementById('event').addEventListener('change', loadSkills);
 
 // Function to start the routine by dynamically generating skill boxes
 function startRoutine() {
@@ -237,20 +238,28 @@ function generateSkillBoxes() {
 }
 
 // Load skills dynamically for a given skill box when an element group is selected
-function loadSkills(skillIndex) {
-  const eventSelect = document.getElementById('event');
-  const elementGroupSelect = document.getElementById(`element-group-${skillIndex}`);
-  const skillDropdown = document.getElementById(`skill-dropdown-${skillIndex}`);
+function loadSkills() {
+    const eventSelect = document.getElementById('event');
+    const selectedEvent = eventSelect.value;
+    const addSkillButton = document.getElementById('add-skill-btn');
 
-  if (!eventSelect || !elementGroupSelect || !skillDropdown) return;
+    // Show or hide the add skill button based on the selected event
+    if (selectedEvent === 'vt') { // Vault
+        addSkillButton.style.display = 'none'; // Hide button
+    } else {
+        addSkillButton.style.display = 'block'; // Show button
+    }
 
-  const event = eventSelect.value;
-  const elementGroup = elementGroupSelect.value;
-
-  if (!elementGroup) {
-      skillDropdown.innerHTML = '<option value="">Select a skill</option>';
-      return;
-  }
+    // Load skills based on selected event
+    if (selectedEvent) {
+        fetch(`skills/${selectedEvent}.json`)
+            .then(response => response.json())
+            .then(jsonData => {
+                // You may want to handle the loaded skills here
+                console.log(jsonData); // For debugging purposes
+            })
+            .catch(error => console.error("Error loading skills:", error));
+    }
 
     fetch(`skills/${event}.json`)
         .then(response => response.json())
