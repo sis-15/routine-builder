@@ -2,871 +2,1051 @@
   {
     "number": 1,
     "description": "Forward uprise to support. 2. Fwd. uprise and straddle cut bwd to handstand.",
-    "value": "A"
+    "value": "A",
+    "Element Group": 1
   },
   {
     "number": 3,
     "description": "Fwd. uprise and straddle cut bwd to hang.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 1
   },
   {
     "number": 5,
     "description": "Fwd. uprise with 1/2 t. to handstand.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 1
   },
   {
     "number": 6,
     "description": "Fwd. uprise with St\u00fctzkehr 3/4 t. or 1/4 t. to handstand followed by a kip on one rail",
-    "value": "F"
+    "value": "F",
+    "Element Group": 1
   },
   {
     "number": 7,
     "description": "Fwd. uprise with 1/4 t. to hang on 1 rail.",
-    "value": "A"
+    "value": "A",
+    "Element Group": 1
   },
   {
     "number": 8,
     "description": "Roll bwd. with 1/2 t. from upper arm hang or Fwd.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 1
   },
   {
     "number": 11,
     "description": "Fwd. uprise to Makuts to upper arm.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 1
   },
   {
     "number": 12,
     "description": "Fwd. uprise to Makuts to support.",
-    "value": "G"
+    "value": "G",
+    "Element Group": 1
   },
   {
     "number": 14,
     "description": "Roll bwd. to handstand with straight arms.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 1
   },
   {
     "number": 20,
     "description": "Salto bwd. with straddled. cut to upper arm hang.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 1
   },
   {
     "number": 15,
     "description": "Back toss from upper arm with 1/4 turn to one rail 16.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 1
   },
   {
     "number": 17,
     "description": "Fwd. uprise with 1/1 t. to handstand.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 1
   },
   {
     "number": 18,
     "description": "Fwd. uprise with 3/2 t. to handstand.",
-    "value": "F"
+    "value": "F",
+    "Element Group": 1
   },
   {
     "number": 24,
     "description": "Roll bwd. with salto bwd. tuck to upper arm hang.",
-    "value": "F"
+    "value": "F",
+    "Element Group": 1
   },
   {
     "number": 21,
     "description": "Roll bwd. with straddled cut to support.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 1
   },
   {
     "number": 30,
     "description": "Roll bwd. with salto bwd. pike to upper arm hang",
-    "value": "G"
+    "value": "G",
+    "Element Group": 1
   },
   {
     "number": 34,
     "description": "Roll bwd. with 1/2 t. tuck to upper arm hang.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 1
   },
   {
     "number": 35,
     "description": "Roll bwd. with 1/2 t. tuck to hang.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 1
   },
   {
     "number": 38,
     "description": "Bwd. uprise to handstand (or with 1/2t).",
-    "value": "B"
+    "value": "B",
+    "Element Group": 1
   },
   {
     "number": 39,
     "description": "Bwd. uprise with 1/2 t. hop to handstand.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 1
   },
   {
     "number": 40,
     "description": "Bwd. uprise with 3/4 t. hop to handstand on 1 rail.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 1
   },
   {
     "number": 44,
     "description": "Bwd. uprise with 1/2 t. and straddle cut bwd. to upper arm hang.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 1
   },
   {
     "number": 45,
     "description": "Bwd. uprise with 1/2t. a. straddled cut bwd. to support.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 1
   },
   {
     "number": 50,
     "description": "Bwd. uprise with 1/2 t. to support.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 1
   },
   {
     "number": 51,
     "description": "Bwd. uprise and 5/4 salto fwd. t. to upper arm hang",
-    "value": "C"
+    "value": "C",
+    "Element Group": 1
   },
   {
     "number": 52,
     "description": "Bwd. uprise and salto fwd. pike or straight to support.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 1
   },
   {
     "number": 54,
     "description": "Bwd. uprise and double salto fwd. tuck to upper arm hang.",
-    "value": "F"
+    "value": "F",
+    "Element Group": 1
   },
   {
     "number": 60,
     "description": "Bwd. uprise and 5/4 salto fwd. straddled to hang.",
-    "value": "F"
+    "value": "F",
+    "Element Group": 1
   },
   {
     "number": 59,
     "description": "Bwd. uprise and 5/4 salto fwd. straddled to upper arm hang.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 1
   },
   {
     "number": 61,
     "description": "Bwd. uprise and straddled cut or flank over to support.",
-    "value": "A"
+    "value": "A",
+    "Element Group": 1
   },
   {
     "number": 62,
     "description": "Bwd. uprise and straddled cut or flank over to support straight. arm.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 1
   },
   {
     "number": 1,
     "description": "Any swing to handstand 2. Bent arm swing fwd. to hop 1/2t. to support.",
-    "value": "A"
+    "value": "A",
+    "Element Group": 2
   },
   {
     "number": 3,
     "description": "St\u00fctzkehr fwd. to handstand (to 1 or 2 bars).",
-    "value": "C"
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 4,
     "description": "St\u00fctzkehr fwd. to handstand (1 rail (also with additional 1/4 or 3/4 turn to handstand)",
-    "value": "D"
+    "value": "D",
+    "Element Group": 2
   },
   {
     "number": 8,
     "description": "Any press with bent arm straight. body, or str. arm bent body to handstand., on 1 or 2 rails (2s.) also straddled",
-    "value": "B"
+    "value": "B",
+    "Element Group": 2
   },
   {
     "number": 9,
     "description": "Diamidov and 1/2 turn to upper arms.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 7,
     "description": "Any L-sit on 1 or 2 rails (2 s.)",
-    "value": "A"
+    "value": "A",
+    "Element Group": 2
   },
   {
     "number": 10,
     "description": "3/4 Diamidov and rear vault to side hang on 1 bar.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 2
   },
   {
     "number": 14,
     "description": "Straddle cut bwd. to handstand.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 2
   },
   {
     "number": 15,
     "description": "Straddle cut bwd. directly to hang",
-    "value": "C"
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 13,
     "description": "Straddle cut bwd. to support.",
-    "value": "A"
+    "value": "A",
+    "Element Group": 2
   },
   {
     "number": 19,
     "description": "Straddle cut fwd. to support or L-sit (2 s.).",
-    "value": "A"
+    "value": "A",
+    "Element Group": 2
   },
   {
     "number": 27,
     "description": "Swing fwd. with 1/1 t. on 1 arm to handstand.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 35,
     "description": "3/4 Diamidov & 3/4 Healy on the other hand to support",
-    "value": "E"
+    "value": "E",
+    "Element Group": 2
   },
   {
     "number": 36,
     "description": "Swing forward with 5/4 on one arm through handstand. and Healy to support.",
-    "value": "F"
+    "value": "F",
+    "Element Group": 2
   },
   {
     "number": 28,
     "description": "Diamidov with 1/4 or 1/2t. to handstand.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 2
   },
   {
     "number": 34,
     "description": "Swing forward with 5/4 t. on one arm through handstand. and Healy to upper arm.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 2
   },
   {
     "number": 32,
     "description": "Swing fwd. with 1/1 t. to upper arm hang.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 2
   },
   {
     "number": 33,
     "description": "Makuts to upper arm hang or 3/4 Diamidov 1/4 Healy to support.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 39,
     "description": "Salto bwd to handstand. Also to one rail.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 40,
     "description": "Salto backward with straddle cut to support.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 2
   },
   {
     "number": 45,
     "description": "Salto bwd. with 1/2 t. to upper arm hang.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 46,
     "description": "Salto bwd to handstand 1 rail (connected to",
-    "value": "D"
+    "value": "D",
+    "Element Group": 2
   },
   {
     "number": 48,
     "description": "Double salto pike to up. arm hang.",
-    "value": "F"
+    "value": "F",
+    "Element Group": 2
   },
   {
     "number": 47,
     "description": "Double salto tuck to upper arm hang.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 2
   },
   {
     "number": 54,
     "description": "Double salto backwards with half turn to upper",
-    "value": "G"
+    "value": "G",
+    "Element Group": 2
   },
   {
     "number": 52,
     "description": "3/2 salto bwd. with 1/2 t. to upper arm hang.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 2
   },
   {
     "number": 56,
-    "description": "Handstand. with 1/4 t. and fall back to support57. Handstand with 3/4 t. and fall back to support with 1/4 t. with 1/4 t.",
-    "value": "B"
+    "description": "Handstand. with 1/4 t. and fall back to support",
+    "value": "B",
+    "Element Group": 2
+  },
+  {
+    "number": 56,
+    "description": "Handstand with 3/4 t. and fall back to support with 1/4 t. with 1/4 t.",
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 62,
     "description": "St\u00fctzkehr bwd. to support.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 2
   },
   {
     "number": 63,
     "description": "St\u00fctzkehr bwd. through handstand. to support.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 69,
     "description": "St\u00fctzkehr bwd. with straddle cut bwd. to support",
-    "value": "C"
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 73,
     "description": "Healy to upper arm hang (also from handstand 74. Following a swing element (min. B) to .on rail). handstand on 1 rail, Healy to upper arm hang.",
-    "value": "A"
+    "value": "A",
+    "Element Group": 2
   },
   {
     "number": 74,
     "description": "Following a swing element (min. B) to .on rail). handstand on 1 rail, Healy to upper arm hang.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 2
   },
   {
     "number": 75,
     "description": "Healy to support (also from handstand on 1 rail).",
-    "value": "C"
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 76,
     "description": "Following a swing element (min. B) to handstand on 1 rail, Healy (360\u00b0 or more) to support.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 2
   },
   {
     "number": 81,
     "description": "Swing bwd. with 1/2 t. hop to handstand.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 82,
     "description": "Swing bwd. with 3/4 t. hop to handstand.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 2
   },
   {
     "number": 83,
     "description": "Swing bwd. with 1/1 t. hop to handstand.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 2
   },
   {
     "number": 84,
     "description": "Gatson 1 with 1/4 t to handstand on 1 rail and 1/4 t.",
-    "value": "F"
+    "value": "F",
+    "Element Group": 2
   },
   {
     "number": 86,
     "description": "From handstand on 1 rail, 1/2 or 3/4 t. fwd. or bwd.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 2
   },
   {
     "number": 91,
     "description": "Any handstand with 1/2 turn. (also with 2 s.)",
-    "value": "A"
+    "value": "A",
+    "Element Group": 2
   },
   {
     "number": 92,
     "description": "Any 1/1 pirouette in handstand on 2 rails.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 2
   },
   {
     "number": 99,
     "description": "From handstand, salto fwd to support or from handstand with rotated grip, inlocate to support.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 101,
     "description": "5/4 salto fwd. straddle directly to hang.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 2
   },
   {
     "number": 104,
     "description": "5/4 salto fwd. tuck or pike to upper arm hang.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 2
   },
   {
     "number": 105,
     "description": "Salto fwd to support.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 106,
     "description": "5/4 salto fwd. straddled to upper arm hang",
-    "value": "D"
+    "value": "D",
+    "Element Group": 2
   },
   {
     "number": 107,
     "description": "5/4 salto fwd. straddled to bent arm support.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 2
   },
   {
     "number": 111,
     "description": "Salto fwd. piked to hang.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 113,
     "description": "Double salto fwd. tuck to upper arm hang.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 2
   },
   {
     "number": 114,
     "description": "Double salto fwd. pike to upper arm hang.",
-    "value": "F"
+    "value": "F",
+    "Element Group": 2
   },
   {
     "number": 117,
     "description": "5/4 salto fwd. straight to upper arm hang",
-    "value": "C"
+    "value": "C",
+    "Element Group": 2
   },
   {
     "number": 119,
     "description": "Salto fwd. with 1/1 t. to upper arm hang.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 2
   },
   {
     "number": 3,
     "description": "Swing forward, straddle cut backward, and regrasp with straight body at horizontal to bent and upper arm.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 3
   },
   {
     "number": 4,
     "description": "Moy piked with straddle bwd to handstand",
-    "value": "D"
+    "value": "D",
+    "Element Group": 3
   },
   {
     "number": 5,
     "description": "Swing forward, straddle cut backward, and regrasp with straight body at horizontal.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 3
   },
   {
     "number": 8,
     "description": "Moy piked with straddled. cut bwd. and 1/2 t. to 9. Moy piked with 1/1 t. to upper arm hang.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 3
   },
   {
     "number": 9,
     "description": "Moy piked with 1/1 t. to upper arm hang.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 3
   },
   {
     "number": 10,
     "description": "Moy and salto fwd. tuck, pike. or straddled. to upper arm hang.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 3
   },
   {
     "number": 14,
     "description": "Moy to support bent legs (also without grip release).",
-    "value": "B"
+    "value": "B",
+    "Element Group": 3
   },
   {
     "number": 15,
     "description": "Moy to support straddled legs (also without grip release).",
-    "value": "C"
+    "value": "C",
+    "Element Group": 3
   },
   {
     "number": 21,
     "description": "Giant swing bwd. to handstand or with inlocation.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 3
   },
   {
     "number": 22,
     "description": "Giant swing bwd. to handstand on one rail fwd. (also with 1/4 or 1/2 turn and to one rail). (connected to Healy type element).",
-    "value": "D"
+    "value": "D",
+    "Element Group": 3
   },
   {
     "number": 29,
     "description": "Giant swing bwd. with Diamidov to handstand, also to one rail.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 3
   },
   {
     "number": 30,
     "description": "Giant swing Diamidov with 1/4 or 1/2 t. to handstand.",
-    "value": "F"
+    "value": "F",
+    "Element Group": 3
   },
   {
     "number": 38,
     "description": "Swing down with salto bwd. straight to hang 39. Giant swing bwd. with 1/2 t. to upper arm hang.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 3
   },
   {
     "number": 39,
     "description": "Giant swing bwd. with 1/2 t. to upper arm hang..",
-    "value": "C"
+    "value": "C",
+    "Element Group": 3
   },
   {
     "number": 40,
     "description": "Giant swing bwd. with 1/2 t. to support.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 3
   },
   {
     "number": 42,
     "description": "Giant swing. bwd. with Diamidov to handstand to one rail (connected to Healy type element).",
-    "value": "F"
+    "value": "F",
+    "Element Group": 3
   },
   {
     "number": 46,
     "description": "Giant swing bwd. with Makuts to upper hang.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 3
   },
   {
     "number": 48,
     "description": "Giant swing bwd. with Makuts.",
-    "value": "F"
+    "value": "F",
+    "Element Group": 3
   },
   {
     "number": 50,
     "description": "Giant swing bwd. with straddled cut to upperaddledarm hang",
-    "value": "B"
+    "value": "B",
+    "Element Group": 3
   },
   {
     "number": 52,
     "description": "Giant swing bwd. with straddle cut to support or bent arms support.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 3
   },
   {
     "number": 53,
     "description": "Giant swing bwd. with 1/2t. and straddled cut bwd. to upper arms.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 3
   },
   {
     "number": 59,
     "description": "From giant. sw.bwd., double salto tuck to upper ",
-    "value": "E"
+    "value": "E",
+    "Element Group": 3
   },
   {
     "number": 60,
     "description": "60. Belle pike.",
-    "value": "F"
+    "value": "F",
+    "Element Group": 3
   },
   {
     "number": 66,
     "description": "Belle with 1/1 turn.",
-    "value": "H"
+    "value": "H",
+    "Element Group": 3
   },
   {
     "number": 69,
     "description": "Giant swing bwd. and salto with 1/2 t. to hang on the end.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 3
   },
   {
     "number": 70,
     "description": "Giant swing bwd. and salto with 1/2 t. to upper arm hang.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 3
   },
   {
     "number": 71,
     "description": "Giant swing bwd. and salto with 1/2 t. to hang.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 3
   },
   {
     "number": 72,
     "description": "Giant swing bwd. with 1/2 t. and 3/2 salto fwd to upp arm hang.",
-    "value": "G"
+    "value": "G",
+    "Element Group": 3
   },
   {
     "number": 73,
     "description": "Glide kip.",
-    "value": "A"
+    "value": "A",
+    "Element Group": 3
   },
   {
     "number": 74,
     "description": "Glide kip with 1/2 2 t. to support.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 3
   },
   {
     "number": 75,
     "description": "Glide kip bwd. to handstand.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 3
   },
   {
     "number": 77,
     "description": "Giant swing bwd. and salto with 1/2 t. to support.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 3
   },
   {
     "number": 78,
     "description": "Giant swing backward with 1/2 t. and 3/2 salto",
-    "value": "H"
+    "value": "H",
+    "Element Group": 3
   },
   {
     "number": 80,
     "description": "Glide kip to straddled cut bwd. handstand on 1 rail.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 3
   },
   {
     "number": 81,
     "description": "Glide kip to straddled cut bwd. to hand.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 3
   },
   {
     "number": 83,
     "description": "Giant swing bwd. and salto with 1/2 str to upper arm hang",
-    "value": "E"
+    "value": "E",
+    "Element Group": 3
   },
   {
     "number": 86,
     "description": "Glide kip one rail through L-sit straddled to handstand.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 3
   },
   {
     "number": 87,
     "description": "Glide kip through L-sit piked to handstand.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 3
   },
   {
     "number": 88,
     "description": "Glide kip through L-sit piked to handstand and 89.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 3
   },
   {
     "number": 92,
     "description": "Glide kip through V-sit and hop 1/2 turn to hang on other rail.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 3
   },
   {
     "number": 97,
     "description": "Cast to upper arm hang.",
-    "value": "A"
+    "value": "A",
+    "Element Group": 3
   },
   {
     "number": 98,
     "description": "Cast to support.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 3
   },
   {
     "number": 99,
     "description": "Felge with 1/2t. to upper arm hang.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 3
   },
   {
     "number": 100,
     "description": "Felge with 1/2 t. to rear support.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 3
   },
   {
     "number": 104,
     "description": "Cast with 1/2 t. to up. arm hang.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 3
   },
   {
     "number": 105,
     "description": "Cast with 1/2t. to support.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 3
   },
   {
     "number": 106,
     "description": "Felge to handstand. Also to one rail or 1/4 t.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 3
   },
   {
     "number": 107,
     "description": "Felge with 1/2 or 3/4 t. to handstand.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 3
   },
   {
     "number": 108,
     "description": "Felge with 1/1t. to handstand.",
-    "value": "F"
+    "value": "F",
+    "Element Group": 3
   },
   {
     "number": 111,
     "description": "Cast to straddle cut backward to handstand.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 3
   },
   {
     "number": 114,
     "description": "Felge with 5/4t. to handstand.",
-    "value": "G"
+    "value": "G",
+    "Element Group": 3
   },
   {
     "number": 115,
     "description": "Felge with travel to hang",
-    "value": "A"
+    "value": "A",
+    "Element Group": 3
   },
   {
     "number": 116,
     "description": "Felge to support",
-    "value": "B"
+    "value": "B",
+    "Element Group": 3
   },
   {
     "number": 117,
     "description": "Felge with immediate straddle cut to support.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 3
   },
   {
     "number": 119,
     "description": "Felge to one rail handstand (connected to Healy type element).",
-    "value": "E"
+    "value": "E",
+    "Element Group": 3
   },
   {
     "number": 120,
     "description": "Felge through handstand to Makuts.",
-    "value": "G"
+    "value": "G",
+    "Element Group": 3
   },
   {
     "number": 122,
     "description": "Felge roll backward with tuck salto 1/2 to upper arm hang.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 3
   },
   {
     "number": 123,
     "description": "Felge roll backward with straight salto 1/2 to upper arm hang.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 3
   },
   {
     "number": 125,
     "description": "Felge with salto bwd tuck to uppper arm hang.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 3
   },
   {
     "number": 126,
     "description": "Felge with salto bwd p. to up. arm hang.",
-    "value": "F"
+    "value": "F",
+    "Element Group": 3
   },
   {
     "number": 127,
     "description": "Felge forward to support.",
-    "value": "A"
+    "value": "A",
+    "Element Group": 3
   },
   {
     "number": 128,
     "description": "Felge forward with 1/2 t. to support.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 3
   },
   {
     "number": 130,
     "description": "Shoot up with 1/4 t. to handstand.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 3
   },
   {
     "number": 131,
     "description": "Shoot up with 1/2 or 3/4 t. to handstand.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 3
   },
   {
     "number": 137,
     "description": "Shoot up to handstand and fall back to support with 1/4 turn.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 3
   },
   {
     "number": 1,
     "description": "Salto fwd. piked or straight also with 1/2 t.",
-    "value": "A"
+    "value": "A",
+    "Element Group": 4
   },
   {
     "number": 5,
     "description": "Double salto fwd. tuck.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 4
   },
   {
     "number": 6,
     "description": "Double salto fwd. p.",
-    "value": "F"
+    "value": "F",
+    "Element Group": 4
   },
   {
     "number": 8,
     "description": "Salto fwd. piked or straight with 1/1",
-    "value": "B"
+    "value": "B",
+    "Element Group": 4
   },
   {
     "number": 9,
     "description": "Salto fwd. piked or straight. 3/2 t.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 4
   },
   {
     "number": 10,
     "description": "Salto fwd. piked or straight with 2/1 or 5/2t.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 4
   },
   {
     "number": 11,
     "description": "Double salto fwd. tuck with 1/2 t. or 1/2 t. double salto 12. Double salto fwd. tucked with 1/1t.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 4
   },
   {
     "number": 12,
     "description": "Double salto fwd. tucked with 1/1t.",
-    "value": "G"
+    "value": "G",
+    "Element Group": 4
   },
   {
     "number": 15,
     "description": "Double salto fwd. tuck from end.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 4
   },
   {
     "number": 18,
     "description": "Double salto fwd. piked with 1/2 t.",
-    "value": "F"
+    "value": "F",
+    "Element Group": 4
   },
   {
     "number": 19,
     "description": "Salto bwd. piked or straight, also with 1/2 t.",
-    "value": "A"
+    "value": "A",
+    "Element Group": 4
   },
   {
     "number": 21,
     "description": "Salto bwd. piked or straight with 1/1 or 3/2t.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 4
   },
   {
     "number": 22,
     "description": "Salto bwd. straight with 2/1t.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 4
   },
   {
     "number": 28,
     "description": "High wende and salto bwd tuck or pike.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 4
   },
   {
     "number": 32,
     "description": "Double salto bwd. tuck from end.",
-    "value": "B"
+    "value": "B",
+    "Element Group": 4
   },
   {
     "number": 33,
     "description": "Double salto bwd. tuck.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 4
   },
   {
     "number": 34,
     "description": "Double salto bwd. pike.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 4
   },
   {
     "number": 36,
     "description": "Double salto bwd. t. with 1/1t.",
-    "value": "G"
+    "value": "G",
+    "Element Group": 4
   },
   {
     "number": 40,
     "description": "Double salto bwd. tucked with 1/2t. or salto bwd.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 4
   },
   {
     "number": 43,
     "description": "From hang on end, salto bwd. straight.",
-    "value": "A"
+    "value": "A",
+    "Element Group": 4
   },
   {
     "number": 45,
     "description": "From hang on end, double salto bwd. Tuck.",
-    "value": "C"
+    "value": "C",
+    "Element Group": 4
   },
   {
     "number": 46,
     "description": "From hang on end, double salto bwd. pike.",
-    "value": "D"
+    "value": "D",
+    "Element Group": 4
   },
   {
     "number": 47,
     "description": "From hang on end, double salto bwd straight 48. From hang on end, triple salto bwd. Tuck",
-    "value": "E"
+    "value": "E",
+    "Element Group": 4
   },
   {
     "number": 48,
     "description": "From hang on end, triple salto bwd. Tuck",
-    "value": "G"
+    "value": "G",
+    "Element Group": 4
   },
   {
     "number": 53,
     "description": "From hang on end, double salto bwd. tuck with 1/1 1/2t.",
-    "value": "E"
+    "value": "E",
+    "Element Group": 4
   },
   {
     "number": 54,
     "description": "From hang on end, double salto bwd. tuck with",
-    "value": "F"
+    "value": "F",
+    "Element Group": 4
   }
 ]
