@@ -13,22 +13,19 @@ const skillValues = {
 
 // Function to calculate the total start value
 function calculateTotalStartValue() {
-  const skillBoxesContainer = document.getElementById("skill-boxes");
-  const skillDropdowns = skillBoxesContainer.querySelectorAll(".skill-dropdown");
-  let totalValue = 10.0; // Starting value
+    const skillBoxesContainer = document.getElementById("skill-boxes");
+    const skillDropdowns = skillBoxesContainer.querySelectorAll(".skill-dropdown");
+    let totalValue = 10.0; // Starting value
 
-  skillDropdowns.forEach(dropdown => {
-      const selectedOption = dropdown.value;
-      if (selectedOption) {
-          const selectedSkillValue = selectedOption.match(/\(([^)]+)\)/);
-          if (selectedSkillValue) {
-              const skillValue = selectedSkillValue[1]; // Get the letter value
-              totalValue += skillValues[skillValue] || 0; // Add the skill value
-          }
-      }
-  });
+    skillDropdowns.forEach(dropdown => {
+        const selectedOption = dropdown.options[dropdown.selectedIndex];
+        if (selectedOption) {
+            const skillValue = parseFloat(selectedOption.getAttribute('data-value')); // Get the skill value
+            totalValue += skillValue || 0; // Add the skill value to the total
+        }
+    });
 
-  document.getElementById("total-start-value").innerText = totalValue.toFixed(1);
+    document.getElementById("total-start-value").innerText = totalValue.toFixed(1);
 }
 
 // Update the skill dropdown and recalculate total when a skill is selected
@@ -64,13 +61,69 @@ document.getElementById("pdf-link-btn").addEventListener("click", function () {
 
 // Function to start the routine by dynamically generating skill boxes
 function startRoutine() {
-  const numSkills = document.getElementById("num-skills").value;
-  const skillBoxesContainer = document.getElementById("skill-boxes");
-  skillBoxesContainer.innerHTML = "";
-  for (let i = 1; i <= numSkills; i++) {
-      addSkillBox(i);
-  }
-  updateNumSkillsInput(); // Update the num-skills input
+    const event = document.getElementById("event").value;
+    let numSkills = document.getElementById("num-skills").value;
+
+    // Restrict to 1 skill if the event is Vault
+    if (event === "vt") {
+        numSkills = 1;
+        document.getElementById("num-skills").value = 1; // Update the input to reflect the restriction
+    }
+
+    const skillBoxesContainer = document.getElementById("skill-boxes");
+    skillBoxesContainer.innerHTML = "";
+    for (let i = 1; i <= numSkills; i++) {
+        if (event === "vt") {
+            addVaultSkillBox(i); // Use a specific function for Vault
+        } else {
+            addSkillBox(i); // Use the regular skill box for other events
+        }
+    }
+}
+
+// Update the event selection to ensure num-skills is correctly set
+document.getElementById("event").addEventListener("change", function() {
+    const event = this.value;
+    if (event === "vt") {
+        document.getElementById("num-skills").value = 1; // Set to 1 when Vault is selected
+    }
+});
+
+// Function to add a skill box for Vault (without element groups)
+function addVaultSkillBox(index) {
+    const skillBoxesContainer = document.getElementById("skill-boxes");
+    const skillBox = document.createElement("div");
+    skillBox.className = "skill-box";
+    skillBox.innerHTML = `
+        <label for="vault-skill-dropdown-${index}">Skill ${index}:</label>
+        <select id="vault-skill-dropdown-${index}" class="skill-dropdown" onchange="calculateTotalStartValue()">
+            <option value="">-- Select Skill --</option>
+        </select>
+    `;
+    skillBoxesContainer.appendChild(skillBox);
+
+    // Load Vault skills dynamically
+    loadVaultSkills(index);
+}
+
+// Function to load Vault skills (no element group)
+function loadVaultSkills(index) {
+    const skillDropdown = document.getElementById(`vault-skill-dropdown-${index}`);
+
+    fetch(`skills/vt.json`)
+        .then(response => response.json())
+        .then(jsonData => {
+            jsonData.forEach(skill => {
+                const option = document.createElement('option');
+                option.value = skill.description; // Skill description
+                option.setAttribute('data-value', skill.value); // Store the value as a data attribute
+                option.textContent = `${skill.description} (Value: ${skill.value})`;
+                skillDropdown.appendChild(option);
+            });
+        })
+        .catch(error => {
+            console.error("Error loading Vault skills:", error);
+        });
 }
 
 // Function to add a skill box
