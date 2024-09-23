@@ -13,18 +13,36 @@ const skillValues = {
 
 // Function to calculate the total start value
 function calculateTotalStartValue() {
-    const skillBoxesContainer = document.getElementById("skill-boxes");
-    const skillDropdowns = skillBoxesContainer.querySelectorAll(".skill-dropdown");
-    let totalValue = 10.0; // Starting value
+    const event = document.getElementById("event").value;
+    let totalValue = 10.0; // Default starting value for all events except Vault
 
-    skillDropdowns.forEach(dropdown => {
-        const selectedOption = dropdown.options[dropdown.selectedIndex];
-        if (selectedOption) {
-            const skillValue = parseFloat(selectedOption.getAttribute('data-value')); // Get the skill value
-            totalValue += skillValue || 0; // Add the skill value to the total
+    if (event === 'vt') {
+        // Vault-specific calculation
+        const skillDropdown = document.querySelector(".skill-dropdown");
+        if (skillDropdown && skillDropdown.value) {
+            const selectedSkillValue = skillDropdown.value.match(/\(([^)]+)\)/);
+            if (selectedSkillValue) {
+                const skillValue = parseFloat(selectedSkillValue[1]); // Extract numeric value for Vault
+                totalValue = skillValue; // Set total value directly to the Vault skill value
+            }
         }
-    });
+    } else {
+        // Calculation for other events
+        const skillDropdowns = document.querySelectorAll(".skill-dropdown");
 
+        skillDropdowns.forEach(dropdown => {
+            const selectedOption = dropdown.value;
+            if (selectedOption) {
+                const selectedSkillValue = selectedOption.match(/\(([^)]+)\)/);
+                if (selectedSkillValue) {
+                    const skillValue = selectedSkillValue[1]; // Get the letter value for non-Vault events
+                    totalValue += skillValues[skillValue] || 0; // Add the skill value for non-Vault events
+                }
+            }
+        });
+    }
+
+    // Update the total start value on the page
     document.getElementById("total-start-value").innerText = totalValue.toFixed(1);
 }
 
