@@ -14,16 +14,15 @@ const skillValues = {
 // Function to calculate the total start value
 function calculateTotalStartValue() {
     const event = document.getElementById("event").value;
-    let totalValue = 10.0; // Default starting value for all events except Vault
+    let totalValue = 0; // Initialize the total value
 
     if (event === 'vt') {
-        // Vault-specific calculation
+        // Vault-specific calculation (since Vault has no element group and only one skill)
         const skillDropdown = document.querySelector(".skill-dropdown");
         if (skillDropdown && skillDropdown.value) {
-            const selectedSkillValue = skillDropdown.value.match(/\(([^)]+)\)/);
-            if (selectedSkillValue) {
-                const skillValue = parseFloat(selectedSkillValue[1]); // Extract numeric value for Vault
-                totalValue = skillValue; // Set total value directly to the Vault skill value
+            const selectedSkillValue = parseFloat(skillDropdown.value); // Extract the value directly as a float for Vault
+            if (!isNaN(selectedSkillValue)) {
+                totalValue = selectedSkillValue; // Set total value directly to the Vault skill value
             }
         }
     } else {
@@ -33,10 +32,12 @@ function calculateTotalStartValue() {
         skillDropdowns.forEach(dropdown => {
             const selectedOption = dropdown.value;
             if (selectedOption) {
-                const selectedSkillValue = selectedOption.match(/\(([^)]+)\)/);
+                const selectedSkillValue = selectedOption.match(/\(([^)]+)\)/); // Extract value in parentheses for other events
                 if (selectedSkillValue) {
-                    const skillValue = selectedSkillValue[1]; // Get the letter value for non-Vault events
-                    totalValue += skillValues[skillValue] || 0; // Add the skill value for non-Vault events
+                    const skillValue = parseFloat(selectedSkillValue[1]); // Convert the extracted value to a float
+                    if (!isNaN(skillValue)) {
+                        totalValue += skillValue; // Add the skill value for non-Vault events
+                    }
                 }
             }
         });
