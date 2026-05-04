@@ -67,6 +67,16 @@ button:hover {
   width: 100%;
 }
 
+.skill-box.dismount-box {
+    border: 2px solid #e74c3c;
+    background-color: #fdf2f2;
+}
+
+.skill-box.dismount-box label {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
 #breakdown-list ul {
     max-height: 200px;
     overflow-y: auto;

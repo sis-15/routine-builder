@@ -12,24 +12,18 @@ function calculateTotalStartValue() {
     const isJO = document.getElementById("jo-scoring-toggle").checked;
     const level = document.getElementById("gym-level").value;
     
-    // 1. Set Level-Specific Skill Caps
-    let skillLimit = 10;
-    if (level === "9") skillLimit = 8;
-    else if (level === "8") skillLimit = 6;
-    
-    if (event === 'fx') {
-        skillLimit = (level === "10") ? 8 : 6;
-    }
+    let skillLimit = (level === "9") ? 8 : (level === "8" ? 6 : 10);
+    if (event === 'fx') skillLimit = (level === "10") ? 8 : 6;
 
     const skillDropdowns = document.querySelectorAll(".skill-dropdown");
     let allSkills = [];
-    let usedGroups = new Set();
     let seenDescriptions = new Set();
     let duplicateFound = false;
 
-    // 2. Collect Skills and Detect Duplicates
-    skillDropdowns.forEach(dropdown => {
+    // 1. Data Collection
+    skillDropdowns.forEach((dropdown, index) => {
         const selectedOption = dropdown.options[dropdown.selectedIndex];
+        const isLastBox = (index === skillDropdowns.length - 1);
         
         if (selectedOption && selectedOption.value !== "" && !selectedOption.disabled) {
             const desc = selectedOption.value;
@@ -50,82 +44,83 @@ function calculateTotalStartValue() {
                 seenDescriptions.add(desc);
             }
 
-            const group = selectedOption.getAttribute('data-group');
-            if (val >= 0) {
-                allSkills.push({ 
-                    group: group, 
-                    desc: desc, 
-                    value: val, 
-                    isDuplicate: isThisADuplicate 
-                });
-                
-                if (group && group !== 'Vault' && val > 0) {
-                    usedGroups.add(group);
-                }
-            }
+            allSkills.push({ 
+                group: selectedOption.getAttribute('data-group'), 
+                desc: desc, 
+                value: val, 
+                isDuplicate: isThisADuplicate,
+                isDismount: isLastBox && event !== 'vt'
+            });
         }
     });
 
-    // 3. Sort and Apply Skill Limit
-    const topSkills = allSkills
-        .filter(s => !s.isDuplicate)
-        .sort((a, b) => b.value - a.value)
-        .slice(0, skillLimit);
+    // 2. Identify Dismount and Top Skills
+    const dismountSkill = allSkills.find(s => s.isDismount);
+    const otherSkills = allSkills.filter(s => !s.isDismount && !s.isDuplicate);
+    const topSkills = otherSkills.sort((a, b) => b.value - a.value).slice(0, skillLimit - 1);
+    
+    if (dismountSkill && !dismountSkill.isDuplicate) {
+        topSkills.push(dismountSkill);
+    }
 
     const difficultySum = topSkills.reduce((acc, s) => acc + Math.round(s.value * 10), 0) / 10;
 
-    // 4. Base and Bonuses
-    const base = isJO ? 10.0 : 0.0;
-    const groupBonus = (event === 'vt') ? 0 : (usedGroups.size * 0.5); 
-    const cvBonus = parseFloat(document.getElementById("cv-bonus")?.value) || 0;
-    const neutralDeductions = parseFloat(document.getElementById("neutral-deductions")?.value) || 0;
+    // 3. JO Logic (EG, Dismount Bonus, ND)
+    let groupBonus = 0;
+    let joDismountBonus = 0;
+    let joPenalty = 0;
 
-    // 5. Generate Warning Logic
-    let warnings = "";
-    if (duplicateFound) {
-        warnings += `<p style="color:#e74c3c; margin:2px 0;">⚠️ Duplicate skills detected! Only the first counts.</p>`;
-    }
-
-    if (event !== 'vt' && allSkills.length > 0) {
-        if (!usedGroups.has("4")) {
-            warnings += `<p style="color:#e67e22; margin:2px 0;">⚠️ Missing Group IV (Dismount) Bonus.</p>`;
-        }
-        if (usedGroups.size < 4) {
-            warnings += `<p style="color:#f39c12; margin:2px 0;">⚠️ Only ${usedGroups.size}/4 Element Groups met.</p>`;
-        }
-        if (allSkills.length < 6) {
-            warnings += `<p style="color:#c0392b; margin:2px 0;">⚠️ Short Routine Penalty may apply.</p>`;
-        }
-    }
-
-    // 6. UI Update: Scorecard
-    const breakdownList = document.getElementById("breakdown-list");
-    if (breakdownList) {
-        let htmlBreakdown = `<ul style="list-style:none; padding:0; margin:10px 0;">`;
+    if (isJO && event !== 'vt' && topSkills.length > 0) {
+        // EG Bonus Logic
+        let usedGroups = new Set();
         topSkills.forEach(s => {
-            htmlBreakdown += `<li style="display:flex; justify-content:space-between; border-bottom:1px solid #eee; padding:4px 0; font-size:0.85em;">
-                <span>${s.desc} (Gr.${s.group})</span>
-                <strong>+${s.value.toFixed(1)}</strong>
-            </li>`;
+            if (s.group && s.value > 0 && !usedGroups.has(s.group)) {
+                if (usedGroups.size === 0) {
+                    groupBonus += 0.5;
+                } else {
+                    groupBonus += (s.value >= 0.4) ? 0.5 : 0.3;
+                }
+                usedGroups.add(s.group);
+            }
         });
-        htmlBreakdown += `</ul>`;
 
-        breakdownList.innerHTML = `
-            ${isJO ? `<p style="display:flex; justify-content:space-between;"><span>JO Base:</span> <strong>10.0</strong></p>` : ''}
-            <div style="background:#f8f9fa; padding:5px; border-radius:4px;">
-                <strong>Counting Top ${topSkills.length} Skills:</strong>
-                ${htmlBreakdown}
-            </div>
-            <p style="display:flex; justify-content:space-between;"><span>EG Bonus:</span> <strong>+${groupBonus.toFixed(1)}</strong></p>
-            <p style="display:flex; justify-content:space-between;"><span>Connections:</span> <strong>+${cvBonus.toFixed(1)}</strong></p>
-            <div id="warnings-area" style="background:#fff3cd; border-radius:4px; padding:5px; margin:5px 0;">${warnings || "✅ Requirements met"}</div>
-            <p style="color:#c0392b; display:flex; justify-content:space-between;"><span>Neutral Deductions:</span> <strong>-${neutralDeductions.toFixed(1)}</strong></p>
-        `;
+        // Dismount Bonus & ND Logic
+        if (dismountSkill && !dismountSkill.isDuplicate) {
+            // 1. Bonus equals the skill value (B=0.2, C=0.3)
+            joDismountBonus = Math.min(dismountSkill.value, 0.5);
+
+            // 2. Strict Double Flip Check
+            // We only want skills that contain "double", "triple", or "2/1" (double full)
+            const descLower = dismountSkill.desc.toLowerCase();
+            const hasDoubleFlip = descLower.includes("double") || 
+                                descLower.includes("triple") || 
+                                descLower.includes("2/1"); // 2/1 is a double full, but 3/2 is only 1.5
+
+            if (level === "10" && !hasDoubleFlip) {
+                joPenalty = 0.3; // This MUST fire for a 1.5 twist
+            }
+        }
+    } else if (event !== 'vt') {
+        let uniqueGroups = new Set(topSkills.filter(s => s.value > 0).map(s => s.group));
+        groupBonus = uniqueGroups.size * 0.5;
     }
 
-    const totalSV = base + difficultySum + groupBonus + cvBonus - neutralDeductions;
-    const scoreDisplay = document.getElementById("total-start-value");
-    if (scoreDisplay) scoreDisplay.innerText = totalSV.toFixed(1);
+    // 4. Final Math
+    const base = isJO ? 10.0 : 0.0;
+    const cvBonus = parseFloat(document.getElementById("cv-bonus")?.value) || 0;
+    const userNeutralDeductions = parseFloat(document.getElementById("neutral-deductions")?.value) || 0;
+    const totalNeutral = userNeutralDeductions + joPenalty;
+
+    const totalSV = base + difficultySum + groupBonus + joDismountBonus + cvBonus - totalNeutral;
+
+    // 5. Update UI
+    updateScorecardUI({
+        isJO, topSkills, groupBonus, cvBonus, 
+        dismountBonus: joDismountBonus, 
+        totalNeutral, base, joPenalty, duplicateFound
+    });
+
+    document.getElementById("total-start-value").innerText = totalSV.toFixed(1);
 }
 
 /**
@@ -134,17 +129,28 @@ function calculateTotalStartValue() {
 function reindexSkills() {
     const event = document.getElementById("event").value;
     const boxes = document.querySelectorAll(".skill-box");
+    const totalBoxes = boxes.length;
 
     boxes.forEach((box, i) => {
         const newIndex = i + 1;
+        const isLast = (newIndex === totalBoxes);
         
-        // Update Label
+        // 1. Handle Label and Styling
         const label = box.querySelector("label");
         if (label) {
-            label.innerText = (event === "vt") ? "Vault Skill:" : `Skill ${newIndex}:`;
+            if (event === "vt") {
+                label.innerText = "Vault Skill:";
+                box.classList.remove("dismount-box");
+            } else if (isLast && totalBoxes > 0) {
+                label.innerText = "Dismount:";
+                box.classList.add("dismount-box"); // Adds the red styling
+            } else {
+                label.innerText = `Skill ${newIndex}:`;
+                box.classList.remove("dismount-box");
+            }
         }
 
-        // Update Select IDs and attributes
+        // 2. Update Select IDs and attributes
         const groupSelect = box.querySelector(".element-group-selector");
         const skillSelect = box.querySelector(".skill-dropdown");
 
@@ -153,7 +159,6 @@ function reindexSkills() {
             groupSelect.setAttribute("onchange", `updateSkillDropdown(${newIndex})`);
         }
         if (skillSelect) {
-            // Check if it's a vault dropdown or standard
             if (skillSelect.id.includes("vault")) {
                 skillSelect.id = `vault-skill-dropdown-${newIndex}`;
             } else {
@@ -189,6 +194,39 @@ function updateSkillDropdown(index) {
             })
             .catch(error => console.error("Error loading skills:", error));
     }
+}
+
+function updateScorecardUI(data) {
+    const breakdownList = document.getElementById("breakdown-list");
+    if (!breakdownList) return;
+
+    let warnings = "";
+    // Display specific Level 10 penalty warning
+    if (data.joPenalty > 0) {
+        warnings += `<p style="color:#e74c3c; margin:2px 0;">⚠️ -0.3 Dismount Penalty (No Double Flip)</p>`;
+    }
+    if (data.duplicateFound) {
+        warnings += `<p style="color:#e74c3c; margin:2px 0;">⚠️ Duplicate skills detected!</p>`;
+    }
+
+    breakdownList.innerHTML = `
+        ${data.isJO ? `<p style="display:flex; justify-content:space-between;"><span>JO Base:</span> <strong>${data.base.toFixed(1)}</strong></p>` : ''}
+        <div style="background:#f8f9fa; padding:5px; border-radius:4px;">
+            <strong>Counting Top ${data.topSkills.length} Skills:</strong>
+            <ul style="list-style:none; padding:0; margin:5px 0;">
+                ${data.topSkills.map(s => `
+                    <li style="display:flex; justify-content:space-between; border-bottom:1px solid #eee; padding:4px 0; font-size:0.85em;">
+                        <span>${s.isDismount ? '<b>[DISMOUNT]</b> ' : ''}${s.desc}</span>
+                        <strong>+${s.value.toFixed(1)}</strong>
+                    </li>`).join('')}
+            </ul>
+        </div>
+        <p style="display:flex; justify-content:space-between;"><span>EG Bonus:</span> <strong>+${data.groupBonus.toFixed(1)}</strong></p>
+        ${data.isJO ? `<p style="display:flex; justify-content:space-between;"><span>Dismount Bonus:</span> <strong>+${data.dismountBonus.toFixed(1)}</strong></p>` : ''}
+        <p style="display:flex; justify-content:space-between;"><span>Connections:</span> <strong>+${data.cvBonus.toFixed(1)}</strong></p>
+        <div id="warnings-area" style="background:#fff3cd; border-radius:4px; padding:5px; margin:5px 0;">${warnings || "✅ Requirements met"}</div>
+        <p style="color:#c0392b; display:flex; justify-content:space-between;"><span>Neutral Deductions:</span> <strong>-${data.totalNeutral.toFixed(1)}</strong></p>
+    `;
 }
 
 function loadVaultSkills(index) {
@@ -231,8 +269,7 @@ function startRoutine() {
         }
     }
     
-    // No need to reindex here as we just built them in order, 
-    // but calculate the math immediately.
+    reindexSkills();
     calculateTotalStartValue();
 }
 
@@ -252,7 +289,7 @@ function addSkillBox(index) {
         <select id="skill-dropdown-${index}" class="skill-dropdown" onchange="calculateTotalStartValue()">
             <option value="">-- Select Skill --</option>
         </select>
-        <button type="button" onclick="removeSkillBox(this)">Remove</button>
+        <button type="button" class="remove-btn" onclick="removeSkillBox(this)">Remove</button>
     `;
     container.appendChild(skillBox);
 }
