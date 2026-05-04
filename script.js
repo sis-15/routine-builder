@@ -1,301 +1,295 @@
 // Mapping of skill values
 const skillValues = {
-  'A': 0.1,
-  'B': 0.2,
-  'C': 0.3,
-  'D': 0.4,
-  'E': 0.5,
-  'F': 0.6,
-  'G': 0.7,
-  'H': 0.8,
-  'I': 0.9
+    'A': 0.1, 'B': 0.2, 'C': 0.3, 'D': 0.4, 'E': 0.5,
+    'F': 0.6, 'G': 0.7, 'H': 0.8, 'I': 0.9
 };
 
-// Function to calculate the total start value
+/**
+ * Main calculation function with JO support and Sidebar
+ */
 function calculateTotalStartValue() {
     const event = document.getElementById("event").value;
-    let totalValue = 0; // Initialize the total value
+    const isJO = document.getElementById("jo-scoring-toggle").checked;
+    const level = document.getElementById("gym-level").value;
+    
+    // 1. Set Level-Specific Skill Caps
+    let skillLimit = 10;
+    if (level === "9") skillLimit = 8;
+    else if (level === "8") skillLimit = 6;
+    
+    if (event === 'fx') {
+        skillLimit = (level === "10") ? 8 : 6;
+    }
 
-    if (event === 'vt') {
-        // Vault-specific calculation (since Vault has no element group and only one skill)
-        const skillDropdown = document.querySelector(".skill-dropdown");
-        if (skillDropdown && skillDropdown.value) {
-            const selectedSkillValue = parseFloat(skillDropdown.value); // Extract the value directly as a float for Vault
-            if (!isNaN(selectedSkillValue)) {
-                totalValue = selectedSkillValue; // Set total value directly to the Vault skill value
+    const skillDropdowns = document.querySelectorAll(".skill-dropdown");
+    let allSkills = [];
+    let usedGroups = new Set();
+    let seenDescriptions = new Set();
+    let duplicateFound = false;
+
+    // 2. Collect Skills and Detect Duplicates
+    skillDropdowns.forEach(dropdown => {
+        const selectedOption = dropdown.options[dropdown.selectedIndex];
+        
+        if (selectedOption && selectedOption.value !== "" && !selectedOption.disabled) {
+            const desc = selectedOption.value;
+            let val = 0;
+            let isThisADuplicate = false;
+
+            if (seenDescriptions.has(desc)) {
+                val = 0; 
+                duplicateFound = true;
+                isThisADuplicate = true;
+            } else {
+                if (event === 'vt') {
+                    val = parseFloat(selectedOption.getAttribute('data-value')) || 0;
+                } else {
+                    const letter = selectedOption.getAttribute('data-letter');
+                    val = skillValues[letter] || 0;
+                }
+                seenDescriptions.add(desc);
             }
-        }
-    } else {
-        // Calculation for other events
-        const skillDropdowns = document.querySelectorAll(".skill-dropdown");
 
-        skillDropdowns.forEach(dropdown => {
-            const selectedOption = dropdown.value;
-            if (selectedOption) {
-                const selectedSkillValue = selectedOption.match(/\(([^)]+)\)/); // Extract value in parentheses for other events
-                if (selectedSkillValue) {
-                    const skillValue = parseFloat(selectedSkillValue[1]); // Convert the extracted value to a float
-                    if (!isNaN(skillValue)) {
-                        totalValue += skillValue; // Add the skill value for non-Vault events
-                    }
+            const group = selectedOption.getAttribute('data-group');
+            if (val >= 0) {
+                allSkills.push({ 
+                    group: group, 
+                    desc: desc, 
+                    value: val, 
+                    isDuplicate: isThisADuplicate 
+                });
+                
+                if (group && group !== 'Vault' && val > 0) {
+                    usedGroups.add(group);
                 }
             }
-        });
+        }
+    });
+
+    // 3. Sort and Apply Skill Limit
+    const topSkills = allSkills
+        .filter(s => !s.isDuplicate)
+        .sort((a, b) => b.value - a.value)
+        .slice(0, skillLimit);
+
+    const difficultySum = topSkills.reduce((acc, s) => acc + Math.round(s.value * 10), 0) / 10;
+
+    // 4. Base and Bonuses
+    const base = isJO ? 10.0 : 0.0;
+    const groupBonus = (event === 'vt') ? 0 : (usedGroups.size * 0.5); 
+    const cvBonus = parseFloat(document.getElementById("cv-bonus")?.value) || 0;
+    const neutralDeductions = parseFloat(document.getElementById("neutral-deductions")?.value) || 0;
+
+    // 5. Generate Warning Logic
+    let warnings = "";
+    if (duplicateFound) {
+        warnings += `<p style="color:#e74c3c; margin:2px 0;">⚠️ Duplicate skills detected! Only the first counts.</p>`;
     }
 
-    // Update the total start value on the page
-    document.getElementById("total-start-value").innerText = totalValue.toFixed(1);
-}
-
-// Update the skill dropdown and recalculate total when a skill is selected
-function updateSkillDropdown(index) {
-  const event = document.getElementById("event").value;
-  const elementGroup = document.getElementById(`element-group-${index}`).value;
-  const skillDropdown = document.getElementById(`skill-dropdown-${index}`);
-
-  // Clear previous options
-  skillDropdown.innerHTML = `<option value="">-- Select Skill --</option>`;
-
-  if (event && elementGroup) {
-      // Load skills dynamically based on event and element group
-      fetch(`skills/${event}.json`)
-          .then(response => response.json())
-          .then(jsonData => {
-              const filteredSkills = jsonData.filter(skill => skill["Element Group"] == elementGroup);
-              filteredSkills.forEach(skill => {
-                  const option = document.createElement("option");
-                  option.value = `${skill.description} (${skill.value})`; // Include value for calculation
-                  option.text = `${skill.description} (${skill.value})`;
-                  skillDropdown.appendChild(option);
-              });
-          })
-          .catch(error => console.error("Error loading skills:", error));
-  }
-}
-
-document.getElementById("start-routine-btn").addEventListener("click", startRoutine);
-document.getElementById("pdf-link-btn").addEventListener("click", function () {
-    window.location.href = "TrimmedCoP2025-2028.pdf"; // Link to embedded PDF
-});
-document.getElementById('event').addEventListener('change', loadSkills);
-
-// Function to start the routine by dynamically generating skill boxes
-function startRoutine() {
-    const event = document.getElementById("event").value;
-    let numSkills = document.getElementById("num-skills").value;
-
-    // Restrict to 1 skill if the event is Vault
-    if (event === "vt") {
-        numSkills = 1;
-        document.getElementById("num-skills").value = 1; // Update the input to reflect the restriction
-    }
-
-    const skillBoxesContainer = document.getElementById("skill-boxes");
-    skillBoxesContainer.innerHTML = "";
-    for (let i = 1; i <= numSkills; i++) {
-        if (event === "vt") {
-            addVaultSkillBox(i); // Use a specific function for Vault
-        } else {
-            addSkillBox(i); // Use the regular skill box for other events
+    if (event !== 'vt' && allSkills.length > 0) {
+        if (!usedGroups.has("4")) {
+            warnings += `<p style="color:#e67e22; margin:2px 0;">⚠️ Missing Group IV (Dismount) Bonus.</p>`;
+        }
+        if (usedGroups.size < 4) {
+            warnings += `<p style="color:#f39c12; margin:2px 0;">⚠️ Only ${usedGroups.size}/4 Element Groups met.</p>`;
+        }
+        if (allSkills.length < 6) {
+            warnings += `<p style="color:#c0392b; margin:2px 0;">⚠️ Short Routine Penalty may apply.</p>`;
         }
     }
-}
 
-// Update the event selection to ensure num-skills is correctly set
-document.getElementById("event").addEventListener("change", function() {
-    const event = this.value;
-    if (event === "vt") {
-        document.getElementById("num-skills").value = 1; // Set to 1 when Vault is selected
+    // 6. UI Update: Scorecard
+    const breakdownList = document.getElementById("breakdown-list");
+    if (breakdownList) {
+        let htmlBreakdown = `<ul style="list-style:none; padding:0; margin:10px 0;">`;
+        topSkills.forEach(s => {
+            htmlBreakdown += `<li style="display:flex; justify-content:space-between; border-bottom:1px solid #eee; padding:4px 0; font-size:0.85em;">
+                <span>${s.desc} (Gr.${s.group})</span>
+                <strong>+${s.value.toFixed(1)}</strong>
+            </li>`;
+        });
+        htmlBreakdown += `</ul>`;
+
+        breakdownList.innerHTML = `
+            ${isJO ? `<p style="display:flex; justify-content:space-between;"><span>JO Base:</span> <strong>10.0</strong></p>` : ''}
+            <div style="background:#f8f9fa; padding:5px; border-radius:4px;">
+                <strong>Counting Top ${topSkills.length} Skills:</strong>
+                ${htmlBreakdown}
+            </div>
+            <p style="display:flex; justify-content:space-between;"><span>EG Bonus:</span> <strong>+${groupBonus.toFixed(1)}</strong></p>
+            <p style="display:flex; justify-content:space-between;"><span>Connections:</span> <strong>+${cvBonus.toFixed(1)}</strong></p>
+            <div id="warnings-area" style="background:#fff3cd; border-radius:4px; padding:5px; margin:5px 0;">${warnings || "✅ Requirements met"}</div>
+            <p style="color:#c0392b; display:flex; justify-content:space-between;"><span>Neutral Deductions:</span> <strong>-${neutralDeductions.toFixed(1)}</strong></p>
+        `;
     }
-});
 
-// Function to add a skill box for Vault (without element groups)
-function addVaultSkillBox(index) {
-    const skillBoxesContainer = document.getElementById("skill-boxes");
-    const skillBox = document.createElement("div");
-    skillBox.className = "skill-box";
-    skillBox.innerHTML = `
-        <label for="vault-skill-dropdown-${index}">Skill ${index}:</label>
-        <select id="vault-skill-dropdown-${index}" class="skill-dropdown" onchange="calculateTotalStartValue()">
-            <option value="">-- Select Skill --</option>
-        </select>
-    `;
-    skillBoxesContainer.appendChild(skillBox);
-
-    // Load Vault skills dynamically
-    loadVaultSkills(index);
+    const totalSV = base + difficultySum + groupBonus + cvBonus - neutralDeductions;
+    const scoreDisplay = document.getElementById("total-start-value");
+    if (scoreDisplay) scoreDisplay.innerText = totalSV.toFixed(1);
 }
 
-// Function to load Vault skills (no element group)
+/**
+ * Re-indexes all skill boxes to maintain numerical order 1, 2, 3...
+ */
+function reindexSkills() {
+    const event = document.getElementById("event").value;
+    const boxes = document.querySelectorAll(".skill-box");
+
+    boxes.forEach((box, i) => {
+        const newIndex = i + 1;
+        
+        // Update Label
+        const label = box.querySelector("label");
+        if (label) {
+            label.innerText = (event === "vt") ? "Vault Skill:" : `Skill ${newIndex}:`;
+        }
+
+        // Update Select IDs and attributes
+        const groupSelect = box.querySelector(".element-group-selector");
+        const skillSelect = box.querySelector(".skill-dropdown");
+
+        if (groupSelect) {
+            groupSelect.id = `element-group-${newIndex}`;
+            groupSelect.setAttribute("onchange", `updateSkillDropdown(${newIndex})`);
+        }
+        if (skillSelect) {
+            // Check if it's a vault dropdown or standard
+            if (skillSelect.id.includes("vault")) {
+                skillSelect.id = `vault-skill-dropdown-${newIndex}`;
+            } else {
+                skillSelect.id = `skill-dropdown-${newIndex}`;
+            }
+        }
+    });
+}
+
+function updateSkillDropdown(index) {
+    const event = document.getElementById("event").value;
+    const elementGroupSelect = document.getElementById(`element-group-${index}`);
+    const skillDropdown = document.getElementById(`skill-dropdown-${index}`);
+
+    if (!elementGroupSelect || !skillDropdown) return;
+    
+    const elementGroup = elementGroupSelect.value;
+    skillDropdown.innerHTML = `<option value="">-- Select Skill --</option>`;
+
+    if (event && elementGroup) {
+        fetch(`skills/${event}.json`)
+            .then(response => response.json())
+            .then(jsonData => {
+                const filteredSkills = jsonData.filter(skill => skill["Element Group"] == elementGroup);
+                filteredSkills.forEach(skill => {
+                    const option = document.createElement("option");
+                    option.setAttribute('data-letter', skill.value); 
+                    option.setAttribute('data-group', skill["Element Group"]);
+                    option.value = skill.description; 
+                    option.text = `${skill.description} (${skill.value})`;
+                    skillDropdown.appendChild(option);
+                });
+            })
+            .catch(error => console.error("Error loading skills:", error));
+    }
+}
+
 function loadVaultSkills(index) {
     const skillDropdown = document.getElementById(`vault-skill-dropdown-${index}`);
+    if (!skillDropdown) return;
 
     fetch(`skills/vt.json`)
         .then(response => response.json())
         .then(jsonData => {
+            skillDropdown.innerHTML = `<option value="">-- Select Vault --</option>`;
             jsonData.forEach(skill => {
                 const option = document.createElement('option');
-                option.value = skill.description; // Skill description
-                option.setAttribute('data-value', skill.value); // Store the value as a data attribute
-                option.textContent = `${skill.description} (Value: ${skill.value})`;
+                option.setAttribute('data-value', skill.value); 
+                option.setAttribute('data-group', 'Vault');
+                option.value = skill.description; 
+                option.textContent = `${skill.description} (SV: ${skill.value})`;
                 skillDropdown.appendChild(option);
             });
         })
-        .catch(error => {
-            console.error("Error loading Vault skills:", error);
-        });
+        .catch(error => console.error("Error loading Vault skills:", error));
 }
 
-// Function to add a skill box
+function startRoutine() {
+    const event = document.getElementById("event").value;
+    let numSkills = parseInt(document.getElementById("num-skills").value) || 0;
+
+    if (event === "vt") {
+        numSkills = 1;
+        document.getElementById("num-skills").value = 1;
+    }
+
+    const skillBoxesContainer = document.getElementById("skill-boxes");
+    skillBoxesContainer.innerHTML = "";
+    
+    for (let i = 1; i <= numSkills; i++) {
+        if (event === "vt") {
+            addVaultSkillBox(i);
+        } else {
+            addSkillBox(i);
+        }
+    }
+    
+    // No need to reindex here as we just built them in order, 
+    // but calculate the math immediately.
+    calculateTotalStartValue();
+}
+
 function addSkillBox(index) {
-  const skillBoxesContainer = document.getElementById("skill-boxes");
-  const skillBox = document.createElement("div");
-  skillBox.className = "skill-box";
-  skillBox.innerHTML = `
-      <label for="element-group-${index}">Skill ${index}:</label>
-      <select id="element-group-${index}" class="element-group-selector" onchange="updateSkillDropdown(${index})">
-          <option value="">-- Select Element Group --</option>
-          <option value="1">Element Group 1</option>
-          <option value="2">Element Group 2</option>
-          <option value="3">Element Group 3</option>
-          <option value="4">Element Group 4</option>
-      </select>
-      <select id="skill-dropdown-${index}" class="skill-dropdown" onchange="calculateTotalStartValue()">
-          <option value="">-- Select Skill --</option>
-      </select>
-      <button type="button" onclick="removeSkillBox(this)">Remove Skill</button>
-  `;
-  skillBoxesContainer.appendChild(skillBox);
-  updateRemoveButtonVisibility();
-  updateNumSkillsInput(); // Update the num-skills input
+    const container = document.getElementById("skill-boxes");
+    const skillBox = document.createElement("div");
+    skillBox.className = "skill-box";
+    skillBox.innerHTML = `
+        <label>Skill ${index}:</label>
+        <select id="element-group-${index}" class="element-group-selector" onchange="updateSkillDropdown(${index})">
+            <option value="">-- Group --</option>
+            <option value="1">Group 1</option>
+            <option value="2">Group 2</option>
+            <option value="3">Group 3</option>
+            <option value="4">Group 4</option>
+        </select>
+        <select id="skill-dropdown-${index}" class="skill-dropdown" onchange="calculateTotalStartValue()">
+            <option value="">-- Select Skill --</option>
+        </select>
+        <button type="button" onclick="removeSkillBox(this)">Remove</button>
+    `;
+    container.appendChild(skillBox);
+}
+
+function addVaultSkillBox(index) {
+    const container = document.getElementById("skill-boxes");
+    const skillBox = document.createElement("div");
+    skillBox.className = "skill-box";
+    skillBox.innerHTML = `
+        <label>Vault Skill:</label>
+        <select id="vault-skill-dropdown-${index}" class="skill-dropdown" onchange="calculateTotalStartValue()">
+            <option value="">-- Select Skill --</option>
+        </select>
+    `;
+    container.appendChild(skillBox);
+    loadVaultSkills(index);
 }
 
 function removeSkillBox(button) {
-  const skillBox = button.parentElement; // Get the parent skill box
-  skillBox.remove(); // Remove the skill box
-  calculateTotalStartValue(); // Recalculate the total start value
-  updateRemoveButtonVisibility();
-  updateNumSkillsInput(); // Update the num-skills input
+    button.parentElement.remove();
+    reindexSkills(); 
+    calculateTotalStartValue();
 }
 
-// Function to update the num-skills input to reflect the current number of skill boxes
-function updateNumSkillsInput() {
-  const skillBoxesContainer = document.getElementById("skill-boxes");
-  const skillCount = skillBoxesContainer.childElementCount; // Count current skill boxes
-  document.getElementById("num-skills").value = skillCount; // Update the input
-}
-
-// Function to update the visibility of remove buttons
-function updateRemoveButtonVisibility() {
-  const skillBoxesContainer = document.getElementById("skill-boxes");
-  const skillBoxes = skillBoxesContainer.getElementsByClassName("skill-box");
-  for (let i = 0; i < skillBoxes.length; i++) {
-      const removeButton = skillBoxes[i].querySelector("button");
-      if (skillBoxes.length === 1) {
-          removeButton.style.display = "none"; // Hide button if it's the last skill box
-      } else {
-          removeButton.style.display = "inline"; // Show button if there's more than one skill box
-      }
-  }
-}
-
-// Function to add a new skill box
 function addNewSkill() {
-  const skillBoxesContainer = document.getElementById("skill-boxes");
-  const newIndex = skillBoxesContainer.childElementCount + 1; // New skill box index
-  addSkillBox(newIndex); // Call function to add the skill box
+    const event = document.getElementById("event").value;
+    if (event === "vt") return;
+    
+    // We add with a placeholder then let reindex handle the correct number
+    addSkillBox(0); 
+    reindexSkills();
 }
 
-// Update the button to add a new skill box
-const addSkillButton = document.createElement("button");
-addSkillButton.innerText = "Add Skill";
-addSkillButton.type = "button";
-addSkillButton.onclick = addNewSkill;
-document.getElementById("skill-routine").appendChild(addSkillButton);
-
-// Clear skill boxes and reset the input fields when event is changed
-function setSkillCount() {
-    document.getElementById('skill-boxes').innerHTML = ''; // Clear skill boxes
-    document.getElementById('num-skills').value = ''; // Reset skill count input
-}
-
-// Generate skill boxes dynamically when the user selects the number of skills for the routine
-function generateSkillBoxes() {
-    const skillCount = parseInt(document.getElementById('num-skills').value);
-    const event = document.getElementById('event').value;
-
-    if (isNaN(skillCount) || !event) {
-        alert("Please select an event and enter a valid number of skills.");
-        return;
-    }
-
-    const container = document.getElementById('skill-boxes');
-    container.innerHTML = ''; // Clear previous boxes
-
-    // Create skill selection boxes dynamically
-    for (let i = 0; i < skillCount; i++) {
-        const skillBox = document.createElement('div');
-        skillBox.innerHTML = `
-            <h3>Skill ${i + 1}</h3>
-            <label for="element-group-${i}">Select Element Group:</label>
-            <select id="element-group-${i}" onchange="loadSkills(${i})">
-                <option value="">Select Element Group</option>
-                <option value="1">Element Group 1</option>
-                <option value="2">Element Group 2</option>
-                <option value="3">Element Group 3</option>
-                <option value="4">Element Group 4</option>
-            </select>
-            <br><br>
-            <label for="skill-dropdown-${i}">Select Skill:</label>
-            <select id="skill-dropdown-${i}">
-                <option value="">Select a skill</option>
-            </select>
-            <br><br>
-        `;
-        container.appendChild(skillBox);
-    }
-}
-
-// Load skills dynamically for a given skill box when an element group is selected
-function loadSkills() {
-    const eventSelect = document.getElementById('event');
-    const selectedEvent = eventSelect.value;
-    const addSkillButton = document.getElementById('add-skill-btn');
-
-    // Show or hide the add skill button based on the selected event
-    if (selectedEvent === 'vt') { // Vault
-        addSkillButton.style.display = 'none'; // Hide button
-    } else {
-        addSkillButton.style.display = 'block'; // Show button
-    }
-
-    // Load skills based on selected event
-    if (selectedEvent) {
-        fetch(`skills/${selectedEvent}.json`)
-            .then(response => response.json())
-            .then(jsonData => {
-                // You may want to handle the loaded skills here
-                console.log(jsonData); // For debugging purposes
-            })
-            .catch(error => console.error("Error loading skills:", error));
-    }
-
-    fetch(`skills/${event}.json`)
-        .then(response => response.json())
-        .then(jsonData => {
-            skillDropdown.innerHTML = '<option value="">Select a skill</option>';
-
-            // Populate dropdown with filtered skills by selected element group
-            jsonData.forEach(skill => {
-                if (skill["Element Group"] === parseInt(elementGroup)) {
-                    const option = document.createElement('option');
-                    option.value = skill.description;
-                    option.textContent = `${skill.description} (Value: ${skill.value})`;
-                    skillDropdown.appendChild(option);
-                }
-            });
-        })
-        .catch(error => {
-            console.error("Error loading skills:", error);
-        });
-}
+// Event Listeners
+document.getElementById("start-routine-btn").addEventListener("click", startRoutine);
+document.getElementById("event").addEventListener("change", function() {
+    if (this.value === "vt") document.getElementById("num-skills").value = 1;
+    document.getElementById("skill-boxes").innerHTML = "";
+    calculateTotalStartValue();
+});
