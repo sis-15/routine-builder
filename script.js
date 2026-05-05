@@ -12,111 +12,99 @@ function calculateTotalStartValue() {
     const isJO = document.getElementById("jo-scoring-toggle").checked;
     const level = document.getElementById("gym-level").value;
     
-    let skillLimit = (level === "9") ? 8 : (level === "8" ? 6 : 10);
-    if (event === 'fx') skillLimit = (level === "10") ? 8 : 6;
+    let skillLimit = (level === "10" && event === 'fx') ? 8 : 10; 
 
     const skillDropdowns = document.querySelectorAll(".skill-dropdown");
     let allSkills = [];
     let seenDescriptions = new Set();
     let duplicateFound = false;
 
-    // 1. Data Collection
+    // 1. Collect Skills
     skillDropdowns.forEach((dropdown, index) => {
         const selectedOption = dropdown.options[dropdown.selectedIndex];
         const isLastBox = (index === skillDropdowns.length - 1);
         
         if (selectedOption && selectedOption.value !== "" && !selectedOption.disabled) {
             const desc = selectedOption.value;
-            let val = 0;
-            let isThisADuplicate = false;
+            const letter = selectedOption.getAttribute('data-letter');
+            const val = skillValues[letter] || 0;
 
             if (seenDescriptions.has(desc)) {
-                val = 0; 
                 duplicateFound = true;
-                isThisADuplicate = true;
             } else {
-                if (event === 'vt') {
-                    val = parseFloat(selectedOption.getAttribute('data-value')) || 0;
-                } else {
-                    const letter = selectedOption.getAttribute('data-letter');
-                    val = skillValues[letter] || 0;
-                }
                 seenDescriptions.add(desc);
+                allSkills.push({ 
+                    group: selectedOption.getAttribute('data-group'), 
+                    desc: desc, 
+                    value: val, 
+                    isDismount: isLastBox && event !== 'vt'
+                });
             }
-
-            allSkills.push({ 
-                group: selectedOption.getAttribute('data-group'), 
-                desc: desc, 
-                value: val, 
-                isDuplicate: isThisADuplicate,
-                isDismount: isLastBox && event !== 'vt'
-            });
         }
     });
 
-    // 2. Identify Dismount and Top Skills
+    // 2. Sort and Identify Top Skills
     const dismountSkill = allSkills.find(s => s.isDismount);
-    const otherSkills = allSkills.filter(s => !s.isDismount && !s.isDuplicate);
+    const otherSkills = allSkills.filter(s => !s.isDismount);
     const topSkills = otherSkills.sort((a, b) => b.value - a.value).slice(0, skillLimit - 1);
-    
-    if (dismountSkill && !dismountSkill.isDuplicate) {
-        topSkills.push(dismountSkill);
-    }
+    if (dismountSkill) topSkills.push(dismountSkill);
 
     const difficultySum = topSkills.reduce((acc, s) => acc + Math.round(s.value * 10), 0) / 10;
 
-    // 3. JO Logic (EG, Dismount Bonus, ND)
+    // 3. JO Logic (EG and Penalty)
     let groupBonus = 0;
-    let joDismountBonus = 0;
     let joPenalty = 0;
 
-    if (isJO && event !== 'vt' && topSkills.length > 0) {
-        // EG Bonus Logic
-        let usedGroups = new Set();
-        topSkills.forEach(s => {
-            if (s.group && s.value > 0 && !usedGroups.has(s.group)) {
-                if (usedGroups.size === 0) {
-                    groupBonus += 0.5;
-                } else {
-                    groupBonus += (s.value >= 0.4) ? 0.5 : 0.3;
+    if (isJO && event === 'fx') {
+        // Map to find the best skill value per group across the entire routine
+        const groupBestSkills = {};
+        allSkills.forEach(s => {
+            if (s.group) {
+                const g = s.group.toString();
+                if (!groupBestSkills[g] || s.value > groupBestSkills[g]) {
+                    groupBestSkills[g] = s.value;
                 }
-                usedGroups.add(s.group);
             }
         });
 
-        // Dismount Bonus & ND Logic
-        if (dismountSkill && !dismountSkill.isDuplicate) {
-            // 1. Bonus equals the skill value (B=0.2, C=0.3)
-            joDismountBonus = Math.min(dismountSkill.value, 0.5);
-
-            // 2. Strict Double Flip Check
-            // We only want skills that contain "double", "triple", or "2/1" (double full)
-            const descLower = dismountSkill.desc.toLowerCase();
-            const hasDoubleFlip = descLower.includes("double") || 
-                                descLower.includes("triple") || 
-                                descLower.includes("2/1"); // 2/1 is a double full, but 3/2 is only 1.5
-
-            if (level === "10" && !hasDoubleFlip) {
-                joPenalty = 0.3; // This MUST fire for a 1.5 twist
+        // 4. Calculate 1.6 Bonus Logic
+        // Group 1: 0.5 by default if present
+        // Groups 2-4: 0.5 if best skill is D (0.4)+, else 0.3
+        for (let i = 1; i <= 4; i++) {
+            const gKey = i.toString();
+            if (groupBestSkills[gKey] !== undefined) {
+                if (i === 1) {
+                    groupBonus += 0.5; // EG1 default
+                } else {
+                    groupBonus += (groupBestSkills[gKey] >= 0.4) ? 0.5 : 0.3;
+                }
             }
         }
-    } else if (event !== 'vt') {
-        let uniqueGroups = new Set(topSkills.filter(s => s.value > 0).map(s => s.group));
-        groupBonus = uniqueGroups.size * 0.5;
+
+        // 5. Neutral Deduction Penalty (-0.3)
+        if (level === "10" && dismountSkill) {
+            const descLower = dismountSkill.desc.toLowerCase();
+            const isDoubleSalto = descLower.includes("double") || descLower.includes("triple");
+            const isDPlusTwist = dismountSkill.value >= 0.4;
+            
+            if (!isDoubleSalto && !isDPlusTwist) {
+                joPenalty = 0.3; 
+            }
+        }
     }
 
-    // 4. Final Math
+    // 6. Final Math
     const base = isJO ? 10.0 : 0.0;
     const cvBonus = parseFloat(document.getElementById("cv-bonus")?.value) || 0;
-    const userNeutralDeductions = parseFloat(document.getElementById("neutral-deductions")?.value) || 0;
-    const totalNeutral = userNeutralDeductions + joPenalty;
+    const totalNeutral = joPenalty; 
 
-    const totalSV = base + difficultySum + groupBonus + joDismountBonus + cvBonus - totalNeutral;
+    // Calculation Check: 10.0 (Base) + 2.0 (DV) + 1.6 (EG) - 0.3 (Penalty) = 13.3
+    const totalSV = base + difficultySum + groupBonus + cvBonus - totalNeutral;
 
-    // 5. Update UI
+    // 7. Push to UI
     updateScorecardUI({
         isJO, topSkills, groupBonus, cvBonus, 
-        dismountBonus: joDismountBonus, 
+        dismountBonus: 0, 
         totalNeutral, base, joPenalty, duplicateFound
     });
 
@@ -201,9 +189,9 @@ function updateScorecardUI(data) {
     if (!breakdownList) return;
 
     let warnings = "";
-    // Display specific Level 10 penalty warning
+    // Display specific Level 10 penalty warning with a negative sign
     if (data.joPenalty > 0) {
-        warnings += `<p style="color:#e74c3c; margin:2px 0;">⚠️ -0.3 Dismount Penalty (No Double Flip)</p>`;
+        warnings += `<p style="color:#e74c3c; margin:2px 0;">⚠️ -${data.joPenalty.toFixed(1)} Dismount Penalty (No Double Flip)</p>`;
     }
     if (data.duplicateFound) {
         warnings += `<p style="color:#e74c3c; margin:2px 0;">⚠️ Duplicate skills detected!</p>`;
@@ -211,21 +199,32 @@ function updateScorecardUI(data) {
 
     breakdownList.innerHTML = `
         ${data.isJO ? `<p style="display:flex; justify-content:space-between;"><span>JO Base:</span> <strong>${data.base.toFixed(1)}</strong></p>` : ''}
-        <div style="background:#f8f9fa; padding:5px; border-radius:4px;">
+        
+        <div style="background:#f8f9fa; padding:5px; border-radius:4px; border: 1px solid #ddd;">
             <strong>Counting Top ${data.topSkills.length} Skills:</strong>
             <ul style="list-style:none; padding:0; margin:5px 0;">
                 ${data.topSkills.map(s => `
                     <li style="display:flex; justify-content:space-between; border-bottom:1px solid #eee; padding:4px 0; font-size:0.85em;">
-                        <span>${s.isDismount ? '<b>[DISMOUNT]</b> ' : ''}${s.desc}</span>
+                        <span>${s.isDismount ? '<b style="color:#e74c3c;">[DISMOUNT]</b> ' : ''}${s.desc}</span>
                         <strong>+${s.value.toFixed(1)}</strong>
                     </li>`).join('')}
             </ul>
         </div>
-        <p style="display:flex; justify-content:space-between;"><span>EG Bonus:</span> <strong>+${data.groupBonus.toFixed(1)}</strong></p>
-        ${data.isJO ? `<p style="display:flex; justify-content:space-between;"><span>Dismount Bonus:</span> <strong>+${data.dismountBonus.toFixed(1)}</strong></p>` : ''}
-        <p style="display:flex; justify-content:space-between;"><span>Connections:</span> <strong>+${data.cvBonus.toFixed(1)}</strong></p>
-        <div id="warnings-area" style="background:#fff3cd; border-radius:4px; padding:5px; margin:5px 0;">${warnings || "✅ Requirements met"}</div>
-        <p style="color:#c0392b; display:flex; justify-content:space-between;"><span>Neutral Deductions:</span> <strong>-${data.totalNeutral.toFixed(1)}</strong></p>
+
+        <div style="margin-top: 10px;">
+            <p style="display:flex; justify-content:space-between;"><span>EG Bonus:</span> <strong>+${data.groupBonus.toFixed(1)}</strong></p>
+            ${data.isJO && data.dismountBonus > 0 ? `<p style="display:flex; justify-content:space-between;"><span>Dismount Bonus:</span> <strong>+${data.dismountBonus.toFixed(1)}</strong></p>` : ''}
+            <p style="display:flex; justify-content:space-between;"><span>Connections:</span> <strong>+${data.cvBonus.toFixed(1)}</strong></p>
+        </div>
+
+        <div id="warnings-area" style="background:#fff3cd; border-radius:4px; padding:5px; margin:5px 0;">
+            ${warnings || "✅ Requirements met"}
+        </div>
+
+        <p style="color:#c0392b; display:flex; justify-content:space-between; border-top: 1px solid #c0392b; padding-top: 5px;">
+            <span>Neutral Deductions:</span> 
+            <strong>-${data.totalNeutral.toFixed(1)}</strong>
+        </p>
     `;
 }
 
